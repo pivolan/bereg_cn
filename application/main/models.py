@@ -19,6 +19,22 @@ class Messages(db.Model):
 	source_visible = db.BooleanProperty(default=True)
 	destination_visible = db.BooleanProperty(default=True)
 
+class easyPage(db.Model):
+	title = db.StringProperty(required=True)
+	content = db.TextProperty(required=True)
+	seo = db.ReferenceProperty(Seo, collection_name='easyPages')
+
+class Seo(db.Model):
+	keywords = db.StringProperty(required=True)
+	description = db.StringProperty(required=True)
+	meta = db.StringProperty(required=True)
+	keywords = db.StringProperty(required=True)
+
+class menuTop(db.Model):
+	pass
+
+class menuLeft(db.Model):
+	pass
 
 class PersonalPage(db.Model):
 	domen = db.StringProperty(required=True)
