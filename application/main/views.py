@@ -10,7 +10,7 @@ from google.appengine.api import images
 
 from pprint import pprint
 
-from application.main.util import render_to
+from application.library.system.util import render_to
 from application.main.models import *
 
 from google.appengine.api import memcache

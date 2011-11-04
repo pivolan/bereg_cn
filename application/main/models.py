@@ -4,10 +4,37 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.syndication.feeds import Feed
 from google.appengine.api import images
 
-#from appengine_admin.db_extensions import ManyToManyProperty 
+#from appengine_admin.db_extensions import ManyToManyProperty
 
 from django import forms
 from django.utils.translation import ugettext as _
+
+class Seo(db.Model):
+	description = db.StringProperty()
+	meta = db.StringListProperty()
+	keywords = db.StringListProperty()
+
+
+class easyPage(db.Model):
+	title = db.StringProperty(required=True)
+	content = db.TextProperty(required=True)
+	seo = db.ReferenceProperty(Seo, collection_name='easyPages')
+
+
+class menuTop(db.Model):
+	url = db.StringProperty()
+	easyPage = db.ReferenceProperty(easyPage, collection_name='menuTops')
+
+
+class menuLeft(db.Model):
+	url = db.StringProperty()
+	easyPage = db.ReferenceProperty(easyPage, collection_name='menuLeft')
+
+
+class treeLink(db.Model):
+	father = db.SelfReferenceProperty(collection_name='children')
+	easyPage = db.ReferenceProperty(easyPage, collection_name='treeLinks')
+
 
 class Messages(db.Model):
 	added_on = db.DateTimeProperty(auto_now_add=True)
@@ -19,22 +46,6 @@ class Messages(db.Model):
 	source_visible = db.BooleanProperty(default=True)
 	destination_visible = db.BooleanProperty(default=True)
 
-class easyPage(db.Model):
-	title = db.StringProperty(required=True)
-	content = db.TextProperty(required=True)
-	seo = db.ReferenceProperty(Seo, collection_name='easyPages')
-
-class Seo(db.Model):
-	keywords = db.StringProperty(required=True)
-	description = db.StringProperty(required=True)
-	meta = db.StringProperty(required=True)
-	keywords = db.StringProperty(required=True)
-
-class menuTop(db.Model):
-	pass
-
-class menuLeft(db.Model):
-	pass
 
 class PersonalPage(db.Model):
 	domen = db.StringProperty(required=True)
@@ -210,6 +221,7 @@ class News(db.Model):
 
 class NewsForm(forms.ModelForm):
 	title = forms.CharField(required=True)
+
 	class Meta:
 		model = News
 		exclude = ['added_on']

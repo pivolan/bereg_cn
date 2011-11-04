@@ -10,12 +10,12 @@ from google.appengine.api import images
 
 from pprint import pprint
 
-from application.main.util import render_to
+from application.library.system.util import render_to
 from application.main.models import *
 
 from google.appengine.api import memcache
 from google.appengine.api import mail
-from google.appengine.api import users as googleUser
+from google.appengine.api import users as googleUsers
 
 import timeit
 import re
@@ -23,7 +23,10 @@ import random
 import datetime
 from datetime import timedelta
 import os
-
+class view:
+	pass
 @render_to("controllers/index/index.html")
 def index(request):
-	return {}
+	view.logout_url= googleUsers.create_logout_url('/')
+	view.login_url = googleUsers.create_login_url('/')
+	return view.__dict__

@@ -97,7 +97,7 @@
 							<td width="222">		   <!-- left -->
 								{% if not auth %}
 									<div class="login">
-										<form name="login" action="login_auth.php" method="POST">
+										<form name="login" action="{{ Users.create_login_url }}" method="POST">
 											<input id="login" class="login replace_empty" name="login" value="Логин">
 											<input id="pass" class="login replace_empty" type="password" name="pass" value="Пароль">
 											<input class="submit_login" type="image" name="sublogin"
@@ -137,9 +137,11 @@
 							<!-- end left -->
 							<td>		   <!-- right -->
 								<div class="main_content">	   <!-- Body -->
+									{% block main_content %}
 									<h1>page.title</h1>
 
 									<p>page.content</p>
+									{% endblock %}
 								</div>
 								<!-- end Body -->
 							</td>

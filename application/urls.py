@@ -2,7 +2,7 @@ from django.conf.urls.defaults import *
 from django.conf import settings
 
 urlpatterns = patterns("",
-	(r"^$", "application.main.index.index"),
+	(r"^$", "application.main.controllers.index.index"),
 
 #	(r"^test/*$", "application.main.views.test"),
 #	(r"^uf$", "application.main.views.formuser"),
