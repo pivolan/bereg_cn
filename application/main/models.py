@@ -37,7 +37,7 @@ class Seo(db.Model):
 	keywords = db.StringListProperty()
 
 
-class easyPage(db.Model):
+class EasyPage(db.Model):
 	title = db.StringProperty(required=True)
 	content = db.TextProperty(required=True)
 	seo = db.ReferenceProperty(Seo, collection_name='easyPages')
@@ -45,14 +45,14 @@ class easyPage(db.Model):
 
 class menuTop(db.Model):
 	url = db.StringProperty()
-	easyPage = db.ReferenceProperty(easyPage, collection_name='menuTops')
+	easyPage = db.ReferenceProperty(EasyPage, collection_name='menuTops')
 
 
 class menuLeft(db.Model):
 	url = db.StringProperty()
-	easyPage = db.ReferenceProperty(easyPage, collection_name='menuLeft')
+	easyPage = db.ReferenceProperty(EasyPage, collection_name='menuLeft')
 
 
 class treeLink(db.Model):
 	father = db.SelfReferenceProperty(collection_name='children')
-	easyPage = db.ReferenceProperty(easyPage, collection_name='treeLinks')
+	easyPage = db.ReferenceProperty(EasyPage, collection_name='treeLinks')

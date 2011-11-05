@@ -3,6 +3,7 @@ from django.conf import settings
 
 urlpatterns = patterns("",
 	(r"^$", "application.main.controllers.index.index"),
+	(r"^page/(\d*)$", "application.main.controllers.index.index"),
 	(r"^login$", "application.main.controllers.index.login"),
 	(r"^logout$", "application.main.controllers.index.logout"),
 	(r"^admin/", include("application.admin.urls")),

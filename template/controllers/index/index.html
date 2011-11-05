@@ -1,11 +1,5 @@
 {% extends "layouts/bereg-cn.html" %}
 {% block main_content %}
-	<p><a href="{{ login_url }}">{{ login_url }}</a></p>
-	<p><a href="{{ logout_url }}">{{ logout_url }}</a></p>
-	<p>email {{ user.email }}</p>
-	<p>firstname {{ user.firstname }}</p>
-	<p>lastname {{ user.lastname }}</p>
-	<p>nickname {{ user.nickname }}</p>
-	<p>user {{ user }}</p>
-	<p>vasya {{ vasya }}</p>
+	<h1 title="{{ page.key.id }}">{{ page.title }}</h1>
+	<p>{{ page.content }}</p>
 {% endblock %}

@@ -27,7 +27,12 @@ class view:
 	pass
 
 @render_to("controllers/index/index.html")
-def index(request):
+def index(request, id = None):
+	if id:
+		view.page = EasyPage.get_by_id(int(id))
+	else:
+		view.page = EasyPage.all().get()
+
 	return view.__dict__
 
 def login(request):
