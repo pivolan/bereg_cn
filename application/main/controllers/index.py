@@ -23,8 +23,7 @@ import datetime
 from datetime import timedelta
 import os
 
-class view:
-	pass
+class view:pass
 
 @render_to("controllers/index/index.html")
 def index(request, id = None):
@@ -34,6 +33,18 @@ def index(request, id = None):
 		view.page = EasyPage.all().get()
 
 	return view.__dict__
+
+@render_to("controllers/index/contacts.html")
+def contacts(request):
+	return {}
+
+@render_to("controllers/index/study.html")
+def study(request):
+	return {}
+
+@render_to("controllers/index/service.html")
+def service(request):
+	return {}
 
 def login(request):
 	return HttpResponseRedirect(redirect_to = googleUsers.create_login_url('/'))

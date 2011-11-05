@@ -196,7 +196,7 @@ ul.submenu a.sublink:hover {
 	position: relative;
 }
 
-a.link_left1, a.link_left {
+a.link_left_sublevel, a.link_left {
 	background: url(/public/img/layout/bereg_cn/lineX.png) no-repeat center top;
 	width: 244px;
 	height: 30px;
@@ -213,11 +213,11 @@ a.link_left1, a.link_left {
 	color: #4d261b;
 }
 
-a.link_left1 {
+a.link_left_sublevel {
 	background-image: none;
 }
 
-a.link_left1:hover, a.link_left:hover {
+a.link_left_sublevel:hover, a.link_left:hover {
 	background-image: url(/public/img/layout/bereg_cn/linkrightActive.png);
 }
 
@@ -285,6 +285,7 @@ input.login {
 }
 
 input.submit_login {
+	margin: 0 52px;
 }
 
 div.login {

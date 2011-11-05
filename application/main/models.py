@@ -45,12 +45,13 @@ class EasyPage(db.Model):
 
 class menuTop(db.Model):
 	url = db.StringProperty()
-	easyPage = db.ReferenceProperty(EasyPage, collection_name='menuTops')
+	easyPage = db.ReferenceProperty(EasyPage, collection_name='menuTops', required=True)
+	father = db.SelfReferenceProperty(collection_name='children')
 
 
 class menuLeft(db.Model):
-	url = db.StringProperty()
-	easyPage = db.ReferenceProperty(EasyPage, collection_name='menuLeft')
+	url = db.StringProperty(required=True)
+	easyPage = db.ReferenceProperty(EasyPage, collection_name='menuLeft', required=True)
 
 
 class treeLink(db.Model):

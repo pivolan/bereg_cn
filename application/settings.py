@@ -78,4 +78,6 @@ INSTALLED_APPS = (
 
 TEMPLATE_CONTEXT_PROCESSORS = (
 	'library.system.auth.auth',
+#  'application.main.template_before_filter.menu_left.menu_left',
+#  'application.main.template_before_filter.menu_top.menu_top',
 )

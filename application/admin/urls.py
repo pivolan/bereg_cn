@@ -2,10 +2,10 @@ from django.conf.urls.defaults import *
 from django.conf import settings
 
 urlpatterns = patterns("",
-	(r"^$", "application.admin.controllers.index.index"),
-	(r"^test$", "application.admin.controllers.index.test"),
-	(r"^login$", "application.admin.controllers.index.login"),
-	(r"^logout$", "application.admin.controllers.index.logout"),
+	(r"^$", "application.admin.views.index"),
+	(r"^test$", "application.admin.views.test"),
+	(r"^login$", "application.admin.views.login"),
+	(r"^logout$", "application.admin.views.logout"),
 
 #	(r"^test/*$", "application.admin.views.test"),
 #	(r"^uf$", "application.admin.views.formuser"),

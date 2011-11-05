@@ -27,7 +27,7 @@ class view:
 	pass
 
 
-@render_to("controllers/index/admin.html")
+@render_to("admin/index.html")
 def index(request):
 	return view.__dict__
 

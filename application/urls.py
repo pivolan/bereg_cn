@@ -3,9 +3,13 @@ from django.conf import settings
 
 urlpatterns = patterns("",
 	(r"^$", "application.main.controllers.index.index"),
+	(r"^contacts$", "application.main.controllers.index.contacts"),
+	(r"^service", "application.main.controllers.index.service"),
+	(r"^study$", "application.main.controllers.index.study"),
 	(r"^page/(\d*)$", "application.main.controllers.index.index"),
 	(r"^login$", "application.main.controllers.index.login"),
 	(r"^logout$", "application.main.controllers.index.logout"),
+
 	(r"^admin/", include("application.admin.urls")),
 
 #	(r"^test/*$", "application.main.views.test"),

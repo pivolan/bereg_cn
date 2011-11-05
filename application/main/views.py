@@ -990,20 +990,6 @@ def cron_jobs(request):
 	memcache.set_multi(toCache)
 	return HttpResponse("%s %s %s %s %s %s" % (a, s, listName[name], num, status, fillCache))
 
-
-@render_to('admin/index.html')
-def admin(request, key=None):
-	if key == 'hlepan':
-		return {'url': googleUser.create_login_url('/admin/'), 'users': []}
-	if key == 'pan':
-		return {'url': googleUser.create_logout_url('/admin/'), 'users': []}
-	if googleUser.is_current_user_admin():
-		users = User.all()
-		return {'users': users}
-	else:
-		return HttpResponse('')
-
-
 def flush(request):
 	if not googleUser.is_current_user_admin():
 		HttpResponseRedirect('/')
