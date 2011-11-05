@@ -53,7 +53,7 @@ MIDDLEWARE_CLASSES = (
 	'django.middleware.common.CommonMiddleware',
 	'django.contrib.sessions.middleware.SessionMiddleware',
 	#	'django.contrib.auth.middleware.AuthenticationMiddleware',
-	'application.library.system.util.AuthenticationMiddleware',
+	'library.system.util.AuthenticationMiddleware',
 	'django.middleware.doc.XViewMiddleware',
 	'django.middleware.locale.LocaleMiddleware',
 )
@@ -77,5 +77,5 @@ INSTALLED_APPS = (
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (
-	'application.library.system.auth.auth',
+	'library.system.auth.auth',
 )

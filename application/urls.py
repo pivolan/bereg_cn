@@ -5,6 +5,7 @@ urlpatterns = patterns("",
 	(r"^$", "application.main.controllers.index.index"),
 	(r"^login$", "application.main.controllers.index.login"),
 	(r"^logout$", "application.main.controllers.index.logout"),
+	(r"^admin/", include("application.admin.urls")),
 
 #	(r"^test/*$", "application.main.views.test"),
 #	(r"^uf$", "application.main.views.formuser"),

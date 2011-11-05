@@ -26,9 +26,14 @@ import os
 class view:
 	pass
 
-@render_to("controllers/index/index.html")
+@render_to("controllers/index/admin.html")
 def index(request):
 	return view.__dict__
+
+@render_to("controllers/index/admin.html")
+def test(request):
+	return view.__dict__
+
 
 def login(request):
 	return HttpResponseRedirect(redirect_to = googleUsers.create_login_url('/'))
