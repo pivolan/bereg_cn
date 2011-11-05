@@ -16,7 +16,7 @@ TIME_ZONE = 'Europe/Moscow W-SU'
 # http://blogs.law.harvard.edu/tech/stories/storyReader$15
 LANGUAGE_CODE = 'ru-ru'
 
-SITE_ID = 1 
+SITE_ID = 1
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
@@ -52,12 +52,11 @@ TEMPLATE_LOADERS = (
 MIDDLEWARE_CLASSES = (
 	'django.middleware.common.CommonMiddleware',
 	'django.contrib.sessions.middleware.SessionMiddleware',
-	'django.contrib.auth.middleware.AuthenticationMiddleware',
+	#	'django.contrib.auth.middleware.AuthenticationMiddleware',
+	'application.library.system.util.AuthenticationMiddleware',
 	'django.middleware.doc.XViewMiddleware',
 	'django.middleware.locale.LocaleMiddleware',
 )
-
-
 
 TEMPLATE_DIRS = (
 	# Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -75,4 +74,8 @@ INSTALLED_APPS = (
 	'django.contrib.sites',
 	'django.contrib.auth',
 	'django.contrib.sessions',
+)
+
+TEMPLATE_CONTEXT_PROCESSORS = (
+	'application.library.system.auth.auth',
 )

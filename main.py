@@ -9,7 +9,7 @@ sys.path.append(ROOT_PATH)
 #from google.appengine.dist import use_library
 #use_library('django', '1.1')
 sys.path.insert(0, "django.zip")
-from appenginepatcher.patch import patch_all, setup_logging
+from appenginepatcher.patch import patch_all
 
 patch_all()
 # Google App Engine imports.

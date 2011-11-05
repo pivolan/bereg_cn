@@ -7,7 +7,6 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.template import RequestContext
 from google.appengine.api import images
-
 from pprint import pprint
 
 from application.library.system.util import render_to
@@ -23,10 +22,16 @@ import random
 import datetime
 from datetime import timedelta
 import os
+
 class view:
 	pass
+
 @render_to("controllers/index/index.html")
 def index(request):
-	view.logout_url= googleUsers.create_logout_url('/')
-	view.login_url = googleUsers.create_login_url('/')
 	return view.__dict__
+
+def login(request):
+	return HttpResponseRedirect(redirect_to = googleUsers.create_login_url('/'))
+
+def logout(request):
+	return HttpResponseRedirect(redirect_to = googleUsers.create_logout_url('/'))

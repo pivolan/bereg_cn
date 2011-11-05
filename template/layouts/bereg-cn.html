@@ -95,30 +95,26 @@
 					<table class="main_content" cellpadding="0" cellspacing="0">
 						<tr valign="top" height="600">
 							<td width="222">		   <!-- left -->
-								{% if not auth %}
+								{% if user %}
 									<div class="login">
-										<form name="login" action="{{ Users.create_login_url }}" method="POST">
-											<input id="login" class="login replace_empty" name="login" value="Логин">
-											<input id="pass" class="login replace_empty" type="password" name="pass" value="Пароль">
-											<input class="submit_login" type="image" name="sublogin"
-											       src="/public/img/layout/bereg_cn/Login.png" width="76"
-											       height="24">
-											<a class="blue_login" href="recoverypass.php">Забыли пароль?</a>
-											<a class="blue_reg" href="register.php">Регистрация</a>
+										Здравствуйте, {{ user.nickname }}.<br>
+										<a class="blue_login" href="/user/profile">Настройки профиля</a>
+										<a class="blue_login" href="/user/pm">Личные сообщения</a>
+										<a class="blue_login" href="/user/order">Заказы({{ orders.count }})</a>
+										<a class="blue_login" href="/user/recycle">Корзина</a>
+										{% if is_admin %}
+											<a class="blue_login" href="admin.php">Администраторство({{ feedback.count }})</a><br/>
+										{% endif %}
+										<form name="" action="/logout" method="post">
+											<input type="image" src="/public/img/layout/bereg_cn/exit.png" value="Выйти">
 										</form>
 									</div>
 								{% else %}
 									<div class="login">
-										Здравствуйте, {{ name }}.<br>
-										<a class="blue_login" href="user.php?a=settings">Настройки профиля</a>
-										<a class="blue_login" href="user.php?a=pm">Личные сообщения</a>
-										<a class="blue_login" href="user.php?a=order">Заказы({{ orders.count }})</a>
-										<a class="blue_login" href="user.php?a=recycle">Корзина</a>
-										{% if admin %}
-											<a class="blue_login" href="admin.php">Администраторство({{ feedback.count }})</a><br/>
-										{% endif %}
-										<form name="" action="login_auth.php?a=exit" method="post">
-											<input type="image" src="/public/img/layout/bereg_cn/exit.png" value="Выйти">
+										<form name="login" action="login" method="POST">
+											<input class="submit_login" type="image" name="sublogin"
+											       src="/public/img/layout/bereg_cn/Login.png" width="76"
+											       height="24">
 										</form>
 									</div>
 								{% endif %}

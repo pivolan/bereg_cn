@@ -13,3 +13,17 @@ def render_to(template):
 		return wrapper
 
 	return renderer
+
+
+class AuthenticationMiddleware(object):
+	def process_request(self, request):
+		assert hasattr(request,
+		               'session'), "The Django authentication middleware requires session middleware to be installed. Edit your MIDDLEWARE_CLASSES setting to insert 'django.contrib.sessions.middleware.SessionMiddleware'."
+
+		from auth import getCurrentUser
+
+		request.user = getCurrentUser()
+		from google.appengine.api import users
+		
+		request.is_admin = users.is_current_user_admin()
+		return None
