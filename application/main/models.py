@@ -12,6 +12,7 @@ from django.utils.translation import ugettext as _
 class Users(db.Model):
 	uid = db.UserProperty()
 	name = db.StringProperty()
+	fio = db.StringProperty()
 
 	def email(self):
 		return self.uid.email()

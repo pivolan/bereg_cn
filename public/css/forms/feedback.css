@@ -1,0 +1,11 @@
+table.feedback input, table.feedback textarea {
+	width: 100%;
+}
+
+table.feedback {
+	font-size: 9pt;
+}
+
+table.feedback input.send {
+	width: auto;
+}

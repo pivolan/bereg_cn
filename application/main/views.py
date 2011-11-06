@@ -10,7 +10,7 @@ from google.appengine.api import images
 
 from pprint import pprint
 
-from application.library.system.util import render_to
+from library.system.util import render_to
 from application.main.models import *
 
 from google.appengine.api import memcache
@@ -240,8 +240,8 @@ def user_status(request):
 					order.paysystem = request.POST['paysystem']
 					order.protection = request.POST['protection']
 					order.save()
-					msg = render_to_string("mail/order.html", {'order': order, 'body': True})
-					title = render_to_string("mail/order.html", {'title': True})
+					msg = render_to_string("old/mail/order.html", {'order': order, 'body': True})
+					title = render_to_string("old/mail/order.html", {'title': True})
 
 					mail.send_mail(sender="no-reply@moneyland.su",
 					               to="%s <%s>" % (user.first_name, user.email),
@@ -262,8 +262,8 @@ def user_status(request):
 					protection=request.POST['protection'],
 					line=int(request.POST['line']),
 					)
-				msg = render_to_string("mail/order.html", {'order': order, 'body': True})
-				title = render_to_string("mail/order.html", {'title': True})
+				msg = render_to_string("old/mail/order.html", {'order': order, 'body': True})
+				title = render_to_string("old/mail/order.html", {'title': True})
 				mail.send_mail(sender="no-reply@moneyland.su",
 				               to="%s <%s>" % (user.first_name, user.email),
 				               subject=title,
@@ -632,8 +632,8 @@ def user_sentmail(request, id=None):
 			                   destination=destination,
 			                   source=request.user)
 
-			msg = render_to_string("mail/sendmail.html", {'message': message, 'body': True})
-			title = render_to_string("mail/sendmail.html", {'message': message, 'title': True})
+			msg = render_to_string("old/mail/sendmail.html", {'message': message, 'body': True})
+			title = render_to_string("old/mail/sendmail.html", {'message': message, 'title': True})
 			mail.send_mail(sender="no-reply@moneyland.su",
 			               to="%s <%s>" % (destination.first_name, destination.email),
 			               subject=title,
@@ -779,8 +779,8 @@ def restorepassword(request):
 
 				user = users.get()
 
-				msg = render_to_string("mail/restorepassword.html", {'user': user, 'body': True})
-				title = render_to_string("mail/restorepassword.html", {'title': True})
+				msg = render_to_string("old/mail/restorepassword.html", {'user': user, 'body': True})
+				title = render_to_string("old/mail/restorepassword.html", {'title': True})
 				mail.send_mail(sender="restorepassword@moneyland.su",
 				               to="%s <%s>" % (user.first_name, user.email),
 				               subject=title,

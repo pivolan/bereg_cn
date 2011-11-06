@@ -24,6 +24,10 @@ a {
 	text-decoration: none;
 }
 
+p {
+	margin: 20px 0;
+}
+
 a img {
 	border: none;
 }
@@ -447,18 +451,6 @@ li.article a {
 div.tree {
 	font-size: 10pt;
 	color: black;
-}
-
-table.feedback input, table.feedback textarea {
-	width: 100%;
-}
-
-table.feedback {
-	font-size: 9pt;
-}
-
-table.feedback input.send {
-	width: auto;
 }
 
 a.order {

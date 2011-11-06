@@ -1,5 +1,6 @@
 from django.shortcuts import render_to_response
 from django.template import RequestContext
+from django.template.loader import render_to_string
 
 def render_to(template):
 	def renderer(function):
@@ -13,6 +14,20 @@ def render_to(template):
 		return wrapper
 
 	return renderer
+
+def render_to_str(template):
+	def renderer(function):
+		def wrapper(request, *args, **kwargs):
+			output = function(request, *args, **kwargs)
+			if not isinstance(output, dict):
+				return output
+			tmpl = output.pop('TEMPLATE', template)
+			return render_to_string(tmpl, output, context_instance=RequestContext(request))
+
+		return wrapper
+
+	return renderer
+
 
 
 class AuthenticationMiddleware(object):

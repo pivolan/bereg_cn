@@ -11,6 +11,7 @@ from pprint import pprint
 
 from library.system.util import render_to
 from application.main.models import *
+from application.main.forms import feedback as feedback_form
 
 from google.appengine.api import memcache
 from google.appengine.api import mail
@@ -45,6 +46,17 @@ def study(request):
 @render_to("controllers/index/service.html")
 def service(request):
 	return {}
+
+@render_to("controllers/index/feedback.html")
+def feedback(request):
+	if request.method == "POST":
+		form = feedback_form(request.POST)
+		if form.is_valid():
+			pass
+	else:
+		form = feedback_form(initial = {'address':'vasya'})
+
+	return {'form': form}
 
 def login(request):
 	return HttpResponseRedirect(redirect_to = googleUsers.create_login_url('/'))
