@@ -10,20 +10,15 @@ var service_slider = {
 	{
 		$('a.service_slider').click(function(){
 			var $this = $(this);
-			var $parent = $(this).parent();
 			var $child = $(this).next('p');
 			$child.slideToggle('fast', function(){
-/*
 				if ($this.hasClass('active')){
 					$this.removeClass('active');
-					$parent.removeClass('active');
 				}
 				else
 				{
 					$this.addClass('active');
-					$parent.addClass('active');
 				}
-*/
 			});
 		});
 	}
