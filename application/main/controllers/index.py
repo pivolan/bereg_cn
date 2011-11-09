@@ -54,7 +54,7 @@ def feedback(request):
 		if form.is_valid():
 			pass
 	else:
-		form = feedback_form(initial = {'address':'vasya'})
+		form = feedback_form({'address':'vasya', 'title':None})
 
 	return {'form': form}
 

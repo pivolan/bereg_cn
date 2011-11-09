@@ -1,66 +1,70 @@
 <link rel="stylesheet" type="text/css" href="/public/css/forms/feedback.css"/>
-<table class="feedback" border="0" width="100%">
-	<tbody>
-	<tr>
-		<td>
-			<form name="feedback" action="" method="post"></form>
-		</td>
-	</tr>
-	<tr>
-		<td>Наименование организации</td>
-	</tr>
-	<tr>
-		<td><input name="company" value="{{ form.company.value }}" type="text"></td>
-	</tr>
+<form name="feedback" action="" method="post">
+	<table class="feedback" border="0" width="100%">
+		<tbody>
+		<tr>
+			<td>Наименование организации</td>
+		</tr>
+		<tr>
+			<td><input name="{{ form.company.name }}" value="{{ form.company.data|default:"" }}" type="text"></td>
+		</tr>
 
-	<tr>
-		<td>Адрес<span class="required">*</span></td>
-	</tr>
-	<tr>
-		<td><input name="adress" value="" type="text">
-			{{ form.address }}
-		</td>
-	</tr>
+		<tr>
+			<td>Адрес
+				<span class="required">*</span>
+			</td>
+		</tr>
+		<tr>
+			<td><input name="{{ form.address.name }}" value="{{ form.address.data|default:"" }}" type="text">
+			</td>
+		</tr>
 
-	<tr>
-		<td>Контактный телефон<span class="required">*</span></td>
-	</tr>
-	<tr>
-		<td><input name="tel" value="{{ form.phone.value }}" type="text"></td>
-	</tr>
+		<tr>
+			<td>Контактный телефон
+				<span class="required">*</span>
+			</td>
+		</tr>
+		<tr>
+			<td><input name="{{ form.phone.name }}" value="{{ form.phone.data|default:"" }}" type="text"></td>
+		</tr>
 
-	<tr>
-		<td>Ваше Ф.И.О.</td>
-	</tr>
-	<tr>
-		<td><input name="fio" value="{{ form.fio.value }}" type="text"></td>
-	</tr>
+		<tr>
+			<td>Ваше Ф.И.О.</td>
+		</tr>
+		<tr>
+			<td><input name="{{ form.fio.name }}" value="{{ form.fio.data|default:""}}" type="text"></td>
+		</tr>
 
-	<tr>
-		<td>Ваш e-mail<span class="required">*</span></td>
-	</tr>
-	<tr>
-		<td><input name="sdkfi" value="{{ form.email.value }}" type="text"></td>
-	</tr>
+		<tr>
+			<td>Ваш e-mail
+				<span class="required">*</span>
+			</td>
+		</tr>
+		<tr>
+			<td><input name="sdkfi" value="{{ form.email.data|default:""}}" type="text"></td>
+		</tr>
 
-	<tr>
-		<td>Тема<span class="required">*</span></td>
-	</tr>
-	<tr>
-		<td><input name="title" value="{{ form.title.value }}" type="text"></td>
-	</tr>
+		<tr>
+			<td>Тема
+				<span class="required">*</span>
+			</td>
+		</tr>
+		<tr>
+			<td><input name="{{ form.title.name }}" value="{{ form.title.data|default:""}}" type="text"></td>
+		</tr>
 
-	<tr>
-		<td>Ваши пожелания</td>
-	</tr>
-	<tr>
-		<td><textarea name="text" rows="10" cols="50" wrap="on">{{ form.text.value }}</textarea></td>
-	</tr>
-	<input name="act" value="add" type="hidden">
-	<input name="fromid" value="2" type="hidden">
-	<tr>
-		<td><input class="send" value="Отправить" type="submit"></td>
-	</tr>
-	</tbody>
-</table>
+		<tr>
+			<td>Ваши пожелания</td>
+		</tr>
+		<tr>
+			<td><textarea name="text" rows="10" cols="50" wrap="on">{{ form.text.data|default:""}}</textarea></td>
+		</tr>
+		<input name="act" value="add" type="hidden">
+		<input name="fromid" value="2" type="hidden">
+		<tr>
+			<td><input class="send" value="Отправить" type="submit"></td>
+		</tr>
+		</tbody>
+	</table>
+</form>
 <script type="text/javascript" src="/public/js/application/default/forms/feedback.js"></script>
