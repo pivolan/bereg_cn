@@ -58,10 +58,10 @@ def feedback(request):
 	if request.method == "POST":
 		form = feedback_form(request.POST)
 		if form.is_valid():
-			mail.send_mail(sender=form.email,
+			mail.send_mail(sender=form.cleaned_data['email'],
 			               to=settings.ADMIN_EMAIL,
-			               subject=form.title,
-			               body=form.text)
+			               subject=form.cleaned_data['title'],
+			               body=form.cleaned_data['text'])
 	else:
 		initial_data = {}
 		if request.user:
