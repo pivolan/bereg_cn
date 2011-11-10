@@ -18,6 +18,8 @@ LANGUAGE_CODE = 'ru-ru'
 
 SITE_ID = 1
 
+ADMIN_EMAIL = "pivolan@gmail.com"
+
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
 USE_I18N = True
@@ -74,6 +76,9 @@ INSTALLED_APPS = (
 	'django.contrib.sites',
 	'django.contrib.auth',
 	'django.contrib.sessions',
+  'library',
+  'application.main',
+  'application.admin',
 )
 
 TEMPLATE_CONTEXT_PROCESSORS = (

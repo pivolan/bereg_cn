@@ -13,6 +13,9 @@ class Users(db.Model):
 	uid = db.UserProperty()
 	name = db.StringProperty()
 	fio = db.StringProperty()
+	company = db.StringProperty()
+	phone = db.StringProperty()
+	address = db.StringProperty()
 
 	def email(self):
 		return self.uid.email()

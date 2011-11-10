@@ -1,11 +1,21 @@
-table.feedback input, table.feedback textarea {
+div.errors, .error {
+	color: red;
+}
+
+ul.errorlist, ul.errorlist li {
+	list-style: none;
+}
+
+div.form.feedback input, div.form.feedback textarea {
+	display: block;
+	margin-bottom: 20px;
 	width: 100%;
 }
 
-table.feedback {
-	font-size: 9pt;
+div.form.feedback input.submit {
+	width: auto;
 }
 
-table.feedback input.send {
-	width: auto;
+.required {
+	color: red;
 }

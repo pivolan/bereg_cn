@@ -11,6 +11,7 @@ class feedback(forms.Form):
 	email = forms.EmailField(required=True)
 	title = forms.CharField(required=True)
 	text = forms.CharField(required=False, widget=forms.Textarea)
+
 	@render_to_str('forms/feedback.html')
 	def as_custom(self):
-		return {'form':self}
+		return {'form': self}

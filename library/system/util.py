@@ -15,6 +15,7 @@ def render_to(template):
 
 	return renderer
 
+
 def render_to_str(template):
 	def renderer(function):
 		def wrapper(request, *args, **kwargs):
@@ -29,7 +30,6 @@ def render_to_str(template):
 	return renderer
 
 
-
 class AuthenticationMiddleware(object):
 	def process_request(self, request):
 		assert hasattr(request,
@@ -39,6 +39,6 @@ class AuthenticationMiddleware(object):
 
 		request.user = getCurrentUser()
 		from google.appengine.api import users
-		
+
 		request.is_admin = users.is_current_user_admin()
 		return None
