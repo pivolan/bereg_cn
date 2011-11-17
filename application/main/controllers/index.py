@@ -20,7 +20,7 @@ from google.appengine.api import users as googleUsers
 
 import gdata.docs
 import gdata.docs.service
-
+from atom.service import AtomService
 import timeit
 import re
 import random
@@ -40,6 +40,7 @@ def index(request, id=None):
 
 	return view.__dict__
 
+
 @render_to("controllers/index/docs.html")
 def docs(request, id=None):
 	gd_client = gdata.docs.service.DocsService(source='bereg-bereg_cn-v1')
@@ -48,8 +49,7 @@ def docs(request, id=None):
 	q = gdata.docs.service.DocumentQuery()
 	q['title'] = id.encode('UTF-8')
 	q['title-exact'] = 'true'
-	view.entry = gd_client.GetDocumentListEntry(id)
-	view.feed = gd_client.Query(q.ToUri(), gdata.docs.DocumentListEntryFromString)
+	view.feed = gd_client.Query(q.ToUri())
 	return view.__dict__
 
 
@@ -100,9 +100,11 @@ def login(request):
 def logout(request):
 	return HttpResponseRedirect(redirect_to=googleUsers.create_logout_url('/'))
 
+
 @render_to("controllers/index/test.html")
 def test(request):
 	return {}
+
 
 @render_to("controllers/index/empty.html")
 def empty(request):

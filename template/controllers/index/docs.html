@@ -1,9 +1,8 @@
 {% extends "layouts/bereg-cn.html" %}
 {% block main_content %}
-	{{ entry }}
 	{% for entry in feeds.entry %}
 		<p>{{ entry.title.text }}</p>
-		<p>{{ entry.resourceId.text }}</p>
+		<p>{{ entry.resourceId }}</p>
 	{% endfor %}
 
 	<div class="clear">резделитель</div>
@@ -11,6 +10,8 @@
 	{% for entry in feed.entry %}
 		<p>{{ entry.title.text }}</p>
 		<p>{{ entry.resourceId.text }}</p>
+		<p>{{ entry.content.text }}</p>
 	{% endfor %}
 	<p>{{ feed }}</p>
+	<p>{{ response_body }}</p>
 {% endblock %}
