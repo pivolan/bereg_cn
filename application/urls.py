@@ -10,6 +10,8 @@ urlpatterns = patterns("",
 	(r"^page/(\d*)$", "application.main.controllers.index.index"),
 	(r"^login$", "application.main.controllers.index.login"),
 	(r"^logout$", "application.main.controllers.index.logout"),
+	(r"^test$", "application.main.controllers.index.test"),
+	(r"^empty$", "application.main.controllers.index.empty"),
 
 	(r"^admin/", include("application.admin.urls")),
 

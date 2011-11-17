@@ -84,3 +84,11 @@ def login(request):
 
 def logout(request):
 	return HttpResponseRedirect(redirect_to=googleUsers.create_logout_url('/'))
+
+@render_to("controllers/index/test.html")
+def test(request):
+	return {}
+
+@render_to("controllers/index/empty.html")
+def empty(request):
+	return {}
