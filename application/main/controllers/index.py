@@ -18,6 +18,9 @@ from google.appengine.api import memcache
 from google.appengine.api import mail
 from google.appengine.api import users as googleUsers
 
+import gdata.docs
+import gdata.docs.service
+
 import timeit
 import re
 import random
@@ -35,6 +38,18 @@ def index(request, id=None):
 	else:
 		view.page = EasyPage.all().get()
 
+	return view.__dict__
+
+@render_to("controllers/index/docs.html")
+def docs(request, id=None):
+	gd_client = gdata.docs.service.DocsService(source='bereg-bereg_cn-v1')
+	gd_client.ClientLogin('pivo@pivolan.ru', 'nigertudasuda')
+	view.feeds = gd_client.GetDocumentListFeed()
+	q = gdata.docs.service.DocumentQuery()
+	q['title'] = id.encode('UTF-8')
+	q['title-exact'] = 'true'
+	view.entry = gd_client.GetDocumentListEntry(id)
+	view.feed = gd_client.Query(q.ToUri(), gdata.docs.DocumentListEntryFromString)
 	return view.__dict__
 
 

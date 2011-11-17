@@ -1,0 +1,944 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4acaa2e3-a49d-4ee5-afda-0a03ad2c5b67" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gae_bereg_cn.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/AES.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/ARC2.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/ARC4.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/Blowfish.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/CAST.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/DES.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/DES3.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/IDEA.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/RC5.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/XOR.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/MD2.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/MD4.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/RIPEMD.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/SHA256.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/show_plan.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/pivo.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Google_App_Engine_SDK.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/other.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/projectCodeStyle.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/main/models_old.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/auth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/core.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/http.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/http_core.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/http_interface.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/mock_http.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/mock_http_core.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/mock_service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/token_store.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/url.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/HMAC.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/MD5.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/SHA.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Protocol/AllOrNothing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Protocol/Chaffing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Protocol/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/PublicKey/DSA.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/PublicKey/ElGamal.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/PublicKey/RSA.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/PublicKey/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/PublicKey/pubkey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/PublicKey/qNEW.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Util/RFC1751.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Util/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Util/number.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Util/randpool.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Util/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/acl/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/acl/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/alt/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/alt/app_engine.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/alt/appengine.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/analytics/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/analytics/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/analytics/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/analytics/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/adminsettings/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/adminsettings/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/audit/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/audit/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/emailsettings/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/emailsettings/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/emailsettings/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/emailsettings/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/groups/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/groups/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/migration/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/migration/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/multidomain/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/multidomain/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/multidomain/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/organization/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/organization/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps_property.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/auth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/blogger/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/blogger/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/blogger/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/blogger/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/books/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/books/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/books/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/calendar/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/calendar/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/calendar/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/calendar/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/calendar_resource/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/calendar_resource/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/calendar_resource/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/codesearch/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/codesearch/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/contacts/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/contacts/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/contacts/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/contacts/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/contentforshopping/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/contentforshopping/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/contentforshopping/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/core.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/docs/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/docs/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/docs/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/docs/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/dublincore/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/dublincore/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/exif/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/finance/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/finance/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/finance/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/gauth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/geo/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/geo/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/health/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/health/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/marketplace/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/marketplace/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/marketplace/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/media/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/media/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/notebook/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/notebook/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/oauth/CHANGES.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/oauth/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/oauth/rsa.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/opensearch/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/opensearch/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/photos/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/photos/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/projecthosting/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/projecthosting/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/projecthosting/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/sample_util.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/sites/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/sites/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/sites/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/spreadsheet/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/spreadsheet/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/spreadsheet/text_db.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/spreadsheets/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/spreadsheets/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/spreadsheets/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/test_config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/test_data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/BaseDB.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/Checker.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/FileObject.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/HandshakeSettings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/Session.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/SessionCache.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/SharedKeyDB.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/TLSConnection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/TLSRecordLayer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/VerifierDB.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/X509.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/X509CertChain.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/api.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/errors.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/AsyncStateMachine.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/ClientHelper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/HTTPTLSConnection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/IMAP4_TLS.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/IntegrationHelper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/POP3_TLS.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/SMTP_TLS.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/TLSAsyncDispatcherMixIn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/TLSSocketServerMixIn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/TLSTwistedProtocolWrapper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/XMLRPCTransport.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/mathtls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/messages.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/AES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/ASN1Parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/Cryptlib_AES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/Cryptlib_RC4.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/Cryptlib_TripleDES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_AES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_RC4.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_RSAKey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_TripleDES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_AES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_RC4.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_RSAKey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_TripleDES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/Python_AES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/Python_RC4.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/Python_RSAKey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/RC4.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/RSAKey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/TripleDES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/cipherfactory.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/codec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/cryptomath.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/dateFuncs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/entropy.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/hmac.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/jython_compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/keyfactory.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/rijndael.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/win32prng.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/xmltools.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/urlfetch.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/webmastertools/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/webmastertools/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/webmastertools/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/youtube/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/youtube/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/youtube/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/youtube/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/controllers/index/docs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/article.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/error.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/error_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/faq.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/faq_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/form.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/index_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/marketing.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/marketing_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/mlm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/news.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/registered.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/registration.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/registration_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/restorepassword.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/restorepassword_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/risk-mlm.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/rules.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/rules_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/services.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/activate.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/activate_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/activated.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/activated_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/books1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/books1_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/books2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/books2_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/mail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/mail_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/mailout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/mailshow.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/news.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/orderpersonalpage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/partner.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/partner_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/partners.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/partners_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/profile.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/profile_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/sentmail.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/sentmail_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/status.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/user/status_eng.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/welcome.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/old/welcome_eng.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/main/controllers/index.py" afterPath="$PROJECT_DIR$/application/main/controllers/index.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/urls.py" afterPath="$PROJECT_DIR$/application/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.py" afterPath="$PROJECT_DIR$/main.py" />
+    </list>
+    <ignored path="gae_bereg_cn.iws" />
+    <ignored path=".idea/" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+    <option name="REVERSE_PATCH" value="false" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="gae_bereg_cn" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="index.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/main/controllers/index.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="49" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.64722615">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="docs.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/controllers/index/docs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="10" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="38" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.yaml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.yaml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/controllers/index/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="14" selection-start="0" selection-end="157" vertical-scroll-proportion="-2.72">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/template/controllers/index/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="758" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mouse_coords.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/application/default/index/mouse_coords.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="39" column="4" selection-start="0" selection-end="5244" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mouse_coords_30.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/application/default/index/mouse_coords_30.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="64" selection-start="0" selection-end="3731" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="init.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/js/application/default/index/init.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="3" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/application/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="57" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
+    <option name="UPDATE_CHANGES_POLICY" value="STASH" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/library/system/util.py" />
+        <option value="$PROJECT_DIR$/application/main/forms.py" />
+        <option value="$PROJECT_DIR$/library/tamplatetags/hhh.py" />
+        <option value="$PROJECT_DIR$/library/templatetags/field_value.py" />
+        <option value="$PROJECT_DIR$/template/controllers/index/feedback.html" />
+        <option value="$PROJECT_DIR$/application/settings.py" />
+        <option value="$PROJECT_DIR$/template/forms/feedback.html" />
+        <option value="$PROJECT_DIR$/public/js/application/default/index/test.js" />
+        <option value="$PROJECT_DIR$/public/js/application/default/index/mouse_coords.js" />
+        <option value="$PROJECT_DIR$/template/controllers/index/test.html" />
+        <option value="$PROJECT_DIR$/public/js/application/default/index/mouse_coords_30.js" />
+        <option value="$PROJECT_DIR$/public/js/application/default/index/init.js" />
+        <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/application/urls.py" />
+        <option value="$PROJECT_DIR$/template/controllers/index/docs.html" />
+        <option value="$PROJECT_DIR$/application/main/controllers/index.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Spelling</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource ProjectPane="true" />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Favorites" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="index" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="com.jetbrains.python.configuration.PythonSdkConfigurable" />
+    <property name="recentsLimit" value="5" />
+    <property name="DefaultHtmlFileTemplate" value="Html" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\public\js\application\default\index" />
+      <recent name="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\template\controllers\index" />
+      <recent name="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\application\admin\" />
+      <recent name="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\application\admin" />
+      <recent name="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\application\main" />
+    </key>
+  </component>
+  <component name="RunManager" selected="App Engine server.gae_bereg_cn">
+    <configuration default="true" type="PythonUnitTestConfigurationType" factoryName="Python's unittest">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="gae_bereg_cn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="PUREUNITTEST" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="gae_bereg_cn" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="gae_bereg_cn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="gae_bereg_cn" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonDocTestRunConfigurationType" factoryName="Python's doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="gae_bereg_cn" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <method />
+    </configuration>
+    <configuration default="false" name="gae_bereg_cn" type="Python.AppEngineServer" factoryName="App Engine server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="gae_bereg_cn" />
+      <option name="browserUrl" value="" />
+      <option name="additionalOptions" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="gae_bereg_cn" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <module name="gae_bereg_cn" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="App Engine server.gae_bereg_cn" />
+      <item index="1" class="java.lang.String" itemvalue="Django server.gae_bereg_cn" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="DETECT_NESTED_COPIES" value="true" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <configuration useDefault="true">C:\Users\pivo\AppData\Roaming\Subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4acaa2e3-a49d-4ee5-afda-0a03ad2c5b67" name="Default" comment="" />
+      <created>1320186198908</created>
+      <updated>1320186198908</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1848" height="1216" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925683" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20497237" sideWeight="0.67157316" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32842687" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842687" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="true" />
+    <option name="myTodoPanelSettings">
+      <value>
+        <are-packages-shown value="false" />
+        <are-modules-shown value="false" />
+        <flatten-packages value="false" />
+        <is-autoscroll-to-source value="false" />
+      </value>
+    </option>
+    <option name="PERFORM_UPDATE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_COMMIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_EDIT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_CHECKOUT_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ADD_REMOVE_IN_BACKGROUND" value="true" />
+    <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
+    <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
+    <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
+    <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
+    <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
+    <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="LAST_COMMIT_MESSAGE" value="тестовое задание на работу." />
+    <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="REFORMAT_BEFORE_FILE_COMMIT" value="false" />
+    <option name="FILE_HISTORY_DIALOG_COMMENTS_SPLITTER_PROPORTION" value="0.8" />
+    <option name="FILE_HISTORY_DIALOG_SPLITTER_PROPORTION" value="0.5" />
+    <option name="ACTIVE_VCS_NAME" />
+    <option name="UPDATE_GROUP_BY_PACKAGES" value="false" />
+    <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
+    <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
+    <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="правка модели" />
+    <MESSAGE value="Прикручена авторизация через google." />
+    <MESSAGE value="добавлен модуль admin. Сделано как новое приложение.&#10;Перенесли библиотеку library в корень проекта." />
+    <MESSAGE value="Добавил первую страницу. Вызов страницы по Id. + route только цифры." />
+    <MESSAGE value="Адрес на кнопку login стал /login" />
+    <MESSAGE value="страницы service study &#10;разнесение по разным папкам стилей и скриптов." />
+    <MESSAGE value="страница сервисы. допилил скрипты. Сделал окончательное оформление." />
+    <MESSAGE value="не доеделанная форма обратной связи.&#10;Убраны мусорные старые шаблоны с папку old.&#10;форма обратной связи вынесена далеко. Скрипты для формы тоже лежат далеко." />
+    <MESSAGE value="вернули active class для активной вкладки" />
+    <MESSAGE value="окончательная форма." />
+    <MESSAGE value="окончательная форма. заебался чесно слово. Ебаные формы в джанго, более убого инструмента я не встречал." />
+    <MESSAGE value="отправка на почту формы вонючей." />
+    <MESSAGE value="тестовое задание на работу." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/application/main/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="2" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/application/default/register_pivo.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/layouts/bereg-cn.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="0" selection-end="6133" vertical-scroll-proportion="-2.04" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/controllers/index/empty.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/system/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="0" selection-start="1358" selection-end="1358" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aecmd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="62" selection-start="281" selection-end="281" vertical-scroll-proportion="0.016037736">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/controllers/index/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="758" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/application/default/index/mouse_coords.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="4" selection-start="0" selection-end="5244" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/application/default/index/mouse_coords_30.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="64" selection-start="0" selection-end="3731" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/application/default/index/init.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="3" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="38" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="57" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/controllers/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="14" selection-start="0" selection-end="157" vertical-scroll-proportion="-2.72">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/controllers/index/docs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="10" selection-start="72" selection-end="72" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/main/controllers/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="49" selection-start="1514" selection-end="1514" vertical-scroll-proportion="0.64722615">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
