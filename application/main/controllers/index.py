@@ -20,6 +20,7 @@ from google.appengine.api import users as googleUsers
 
 import gdata.docs
 import gdata.docs.service
+from gdata import client
 from atom.service import AtomService
 import timeit
 import re
@@ -45,11 +46,12 @@ def index(request, id=None):
 def docs(request, id=None):
 	gd_client = gdata.docs.service.DocsService(source='bereg-bereg_cn-v1')
 	gd_client.ClientLogin('pivo@pivolan.ru', 'nigertudasuda')
-	view.feeds = gd_client.GetDocumentListFeed()
+	feeds = view.feeds = gd_client.GetDocumentListFeed()
 	q = gdata.docs.service.DocumentQuery()
 	q['title'] = id.encode('UTF-8')
 	q['title-exact'] = 'true'
 	view.feed = gd_client.Query(q.ToUri())
+	view.html = gdata.docs.client.DocsClient.GetFileContent(feeds.entry[0])
 	return view.__dict__
 
 
