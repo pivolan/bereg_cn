@@ -1,228 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4acaa2e3-a49d-4ee5-afda-0a03ad2c5b67" name="Default" comment="тестовое задание на работу.">
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\auth.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\core.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\http.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\http_core.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\http_interface.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\mock_http.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\mock_http_core.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\mock_service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\token_store.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\atom\url.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Cipher\AES.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Cipher\ARC2.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Cipher\ARC4.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Cipher\Blowfish.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Cipher\CAST.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Cipher\DES.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Cipher\DES3.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Cipher\IDEA.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Cipher\RC5.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Cipher\XOR.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Cipher\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Hash\HMAC.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Hash\MD2.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Hash\MD4.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Hash\MD5.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Hash\RIPEMD.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Hash\SHA.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Hash\SHA256.pyd" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Hash\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Protocol\AllOrNothing.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Protocol\Chaffing.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Protocol\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\PublicKey\DSA.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\PublicKey\ElGamal.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\PublicKey\RSA.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\PublicKey\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\PublicKey\pubkey.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\PublicKey\qNEW.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Util\RFC1751.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Util\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Util\number.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Util\randpool.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\Util\test.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\Crypto\test.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\acl\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\acl\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\alt\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\alt\app_engine.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\alt\appengine.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\analytics\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\analytics\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\analytics\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\analytics\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\adminsettings\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\adminsettings\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\audit\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\audit\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\emailsettings\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\emailsettings\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\emailsettings\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\emailsettings\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\groups\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\groups\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\migration\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\migration\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\multidomain\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\multidomain\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\multidomain\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\organization\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\organization\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\apps_property.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\auth.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\blogger\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\blogger\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\blogger\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\blogger\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\books\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\books\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\books\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\calendar\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\calendar\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\calendar\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\calendar\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\calendar_resource\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\calendar_resource\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\calendar_resource\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\codesearch\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\codesearch\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\contacts\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\contacts\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\contacts\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\contacts\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\contentforshopping\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\contentforshopping\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\contentforshopping\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\core.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\docs\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\docs\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\docs\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\docs\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\dublincore\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\dublincore\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\exif\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\finance\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\finance\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\finance\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\gauth.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\geo\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\geo\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\health\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\health\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\marketplace\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\marketplace\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\marketplace\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\media\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\media\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\notebook\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\notebook\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\oauth\CHANGES.txt" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\oauth\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\oauth\rsa.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\opensearch\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\opensearch\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\photos\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\photos\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\projecthosting\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\projecthosting\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\projecthosting\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\sample_util.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\sites\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\sites\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\sites\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\spreadsheet\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\spreadsheet\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\spreadsheet\text_db.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\spreadsheets\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\spreadsheets\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\spreadsheets\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\test_config.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\test_data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\BaseDB.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\Checker.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\FileObject.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\HandshakeSettings.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\Session.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\SessionCache.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\SharedKeyDB.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\TLSConnection.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\TLSRecordLayer.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\VerifierDB.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\X509.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\X509CertChain.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\api.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\constants.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\errors.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\integration\AsyncStateMachine.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\integration\ClientHelper.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\integration\HTTPTLSConnection.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\integration\IMAP4_TLS.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\integration\IntegrationHelper.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\integration\POP3_TLS.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\integration\SMTP_TLS.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\integration\TLSAsyncDispatcherMixIn.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\integration\TLSSocketServerMixIn.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\integration\TLSTwistedProtocolWrapper.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\integration\XMLRPCTransport.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\integration\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\mathtls.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\messages.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\AES.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\ASN1Parser.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\Cryptlib_AES.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\Cryptlib_RC4.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\Cryptlib_TripleDES.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\OpenSSL_AES.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\OpenSSL_RC4.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\OpenSSL_RSAKey.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\OpenSSL_TripleDES.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\PyCrypto_AES.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\PyCrypto_RC4.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\PyCrypto_RSAKey.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\PyCrypto_TripleDES.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\Python_AES.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\Python_RC4.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\Python_RSAKey.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\RC4.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\RSAKey.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\TripleDES.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\cipherfactory.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\codec.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\compat.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\cryptomath.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\dateFuncs.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\entropy.c" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\hmac.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\jython_compat.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\keyfactory.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\rijndael.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\win32prng.c" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\tlslite\utils\xmltools.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\urlfetch.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\webmastertools\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\webmastertools\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\webmastertools\service.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\youtube\__init__.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\youtube\client.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\youtube\data.py" afterPath="" />
-      <change type="DELETED" beforePath="D:\pivo\WebMaster\bereg-cn.ru\gae_bereg_cn\gdata\youtube\service.py" afterPath="" />
+    <list default="true" id="4acaa2e3-a49d-4ee5-afda-0a03ad2c5b67" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/AES.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/ARC2.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/ARC4.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/Blowfish.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/CAST.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/DES.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/DES3.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/IDEA.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/RC5.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/XOR.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/MD2.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/MD4.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/RIPEMD.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/SHA256.pyd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/auth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/core.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/http.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/http_core.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/http_interface.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/mock_http.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/mock_http_core.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/mock_service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/token_store.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/atom/url.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Cipher/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/HMAC.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/MD5.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/SHA.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Hash/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Protocol/AllOrNothing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Protocol/Chaffing.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Protocol/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/PublicKey/DSA.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/PublicKey/ElGamal.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/PublicKey/RSA.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/PublicKey/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/PublicKey/pubkey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/PublicKey/qNEW.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Util/RFC1751.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Util/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Util/number.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Util/randpool.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/Util/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/Crypto/test.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/acl/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/acl/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/alt/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/alt/app_engine.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/alt/appengine.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/analytics/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/analytics/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/analytics/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/analytics/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/adminsettings/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/adminsettings/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/audit/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/audit/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/emailsettings/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/emailsettings/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/emailsettings/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/emailsettings/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/groups/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/groups/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/migration/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/migration/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/apps_property.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/auth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/base/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/base/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/blogger/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/blogger/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/blogger/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/blogger/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/books/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/books/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/books/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/calendar/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/calendar/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/calendar/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/calendar_resource/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/calendar_resource/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/calendar_resource/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/codesearch/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/codesearch/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/contacts/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/contacts/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/contacts/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/contacts/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/core.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/docs/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/docs/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/docs/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/docs/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/dublincore/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/dublincore/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/exif/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/finance/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/finance/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/finance/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/gauth.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/geo/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/geo/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/health/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/health/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/maps/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/maps/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/maps/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/media/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/media/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/notebook/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/notebook/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/oauth/CHANGES.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/oauth/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/oauth/rsa.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/opensearch/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/opensearch/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/photos/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/photos/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/projecthosting/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/projecthosting/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/projecthosting/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/sample_util.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/sites/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/sites/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/sites/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/spreadsheet/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/spreadsheet/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/spreadsheet/text_db.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/spreadsheets/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/spreadsheets/client.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/spreadsheets/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/test_config.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/test_data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/BaseDB.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/Checker.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/FileObject.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/HandshakeSettings.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/Session.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/SessionCache.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/SharedKeyDB.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/TLSConnection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/TLSRecordLayer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/VerifierDB.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/X509.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/X509CertChain.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/api.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/constants.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/errors.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/AsyncStateMachine.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/ClientHelper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/HTTPTLSConnection.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/IMAP4_TLS.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/IntegrationHelper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/POP3_TLS.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/SMTP_TLS.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/TLSAsyncDispatcherMixIn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/TLSSocketServerMixIn.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/TLSTwistedProtocolWrapper.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/XMLRPCTransport.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/integration/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/mathtls.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/messages.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/AES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/ASN1Parser.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/Cryptlib_AES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/Cryptlib_RC4.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/Cryptlib_TripleDES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_AES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_RC4.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_RSAKey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/OpenSSL_TripleDES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_AES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_RC4.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_RSAKey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/PyCrypto_TripleDES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/Python_AES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/Python_RC4.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/Python_RSAKey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/RC4.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/RSAKey.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/TripleDES.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/cipherfactory.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/codec.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/cryptomath.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/dateFuncs.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/entropy.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/hmac.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/jython_compat.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/keyfactory.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/rijndael.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/win32prng.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/tlslite/utils/xmltools.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/urlfetch.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/webmastertools/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/webmastertools/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/webmastertools/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/youtube/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/youtube/data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gdata/youtube/service.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/library/system/BeautifulSoup.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/main/controllers/index.py" afterPath="$PROJECT_DIR$/application/main/controllers/index.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/controllers/index/docs.html" afterPath="$PROJECT_DIR$/template/controllers/index/docs.html" />
@@ -248,19 +241,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/application/main/controllers/index.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="22" selection-start="1597" selection-end="1597" vertical-scroll-proportion="0.0">
+            <state line="57" column="107" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.41547278">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <file leaf-file-name="client.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gdata/docs/client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="74" column="32" selection-start="2593" selection-end="2593" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -269,34 +262,7 @@
       <file leaf-file-name="docs.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/template/controllers/index/docs.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="9" selection-start="444" selection-end="444" vertical-scroll-proportion="-12.24">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="38" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/template/controllers/index/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="14" selection-start="0" selection-end="157" vertical-scroll-proportion="-2.72">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="57" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+            <state line="1" column="24" selection-start="62" selection-end="62" vertical-scroll-proportion="-0.68">
               <folding />
             </state>
           </provider>
@@ -316,8 +282,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/application/main/forms.py" />
-        <option value="$PROJECT_DIR$/library/tamplatetags/hhh.py" />
         <option value="$PROJECT_DIR$/library/templatetags/field_value.py" />
         <option value="$PROJECT_DIR$/template/controllers/index/feedback.html" />
         <option value="$PROJECT_DIR$/application/settings.py" />
@@ -330,6 +294,8 @@
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/application/urls.py" />
         <option value="$PROJECT_DIR$/gdata/docs/service.py" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/gdata/docs/client.py" />
         <option value="$PROJECT_DIR$/template/controllers/index/docs.html" />
         <option value="$PROJECT_DIR$/application/main/controllers/index.py" />
       </list>
@@ -389,6 +355,122 @@
               <option name="myItemId" value="gae_bereg_cn" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.5.4 (D:/Program Files/webdev/Python25/pythonw.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.5.4 (D:/Program Files/webdev/Python25/pythonw.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gdata" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.5.4 (D:/Program Files/webdev/Python25/pythonw.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-packages" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="atom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.5.4 (D:/Program Files/webdev/Python25/pythonw.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.5.4 (D:/Program Files/webdev/Python25/pythonw.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="&lt; Python 2.5.4 (D:/Program Files/webdev/Python25/pythonw.exe) &gt;" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="-291712208" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -397,6 +479,46 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django.zip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django.zip" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="django" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -460,47 +582,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_bereg_cn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_bereg_cn" />
+              <option name="myItemId" value="library" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_bereg_cn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gae_bereg_cn" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="application" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -670,25 +756,36 @@
       <created>1320186198908</created>
       <updated>1320186198908</updated>
     </task>
-    <servers />
+    <servers>
+      <GitHub shared="false">
+        <password>dfcedfccdfc2dfd8df92df9fdfccdf98dfccdf92dfd3df8fdf8edf80</password>
+        <option name="repoAuthor" value="pivolan" />
+        <option name="repoName" value="bereg_cn" />
+        <option name="url" value="https://github.com" />
+        <option name="useHttpAuthentication" value="false" />
+        <option name="useProxy" value="false" />
+        <username>pivolan</username>
+      </GitHub>
+    </servers>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1848" height="1216" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842687" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842687" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32983425" sideWeight="0.67157316" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32983425" sideWeight="0.67065316" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842687" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925683" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842687" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32934684" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -719,7 +816,7 @@
     <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="DEFAULT_PATCH_EXTENSION" value="patch" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="тестовое задание на работу." />
+    <option name="LAST_COMMIT_MESSAGE" value="удалил старый gdata" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -745,21 +842,12 @@
     <MESSAGE value="окончательная форма. заебался чесно слово. Ебаные формы в джанго, более убого инструмента я не встречал." />
     <MESSAGE value="отправка на почту формы вонючей." />
     <MESSAGE value="тестовое задание на работу." />
+    <MESSAGE value="удалил старый gdata" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/js/application/default/index/mouse_coords.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="4" selection-start="0" selection-end="5244" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/application/default/index/mouse_coords_30.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="64" selection-start="0" selection-end="3731" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/js/application/default/index/init.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="3" selection-start="383" selection-end="383" vertical-scroll-proportion="0.0" />
@@ -775,13 +863,6 @@
         <state line="10" column="57" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/controllers/index/docs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="9" selection-start="444" selection-end="444" vertical-scroll-proportion="-12.24">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/template/controllers/index/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="14" selection-start="0" selection-end="157" vertical-scroll-proportion="-2.72">
@@ -789,16 +870,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/application/main/controllers/index.py">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="22" selection-start="1597" selection-end="1597" vertical-scroll-proportion="0.0">
+        <state line="58" column="1" selection-start="2912" selection-end="2912" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+    <entry file="file://D:/Program Files/webdev/Python25/Lib/site-packages/gdata/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm10/system/python_stubs/-291712208/__builtin__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3926" column="4" selection-start="133438" selection-end="133438" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/django.zip!/django/utils/encoding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/template/controllers/index/docs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="24" selection-start="62" selection-end="62" vertical-scroll-proportion="-0.68">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/webdev/Python25/Lib/httplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="893" column="8" selection-start="30812" selection-end="30812" vertical-scroll-proportion="-0.003773585">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/webdev/Python25/Lib/site-packages/atom/http.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="173" column="25" selection-start="6072" selection-end="6072" vertical-scroll-proportion="0.6537736">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/atom/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="116" column="31" selection-start="4343" selection-end="4343" vertical-scroll-proportion="0.63773584">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gdata/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="263" column="44" selection-start="9379" selection-end="9379" vertical-scroll-proportion="0.3490566">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gdata/docs/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="32" selection-start="2593" selection-end="2593" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/main/controllers/index.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="107" selection-start="1949" selection-end="1949" vertical-scroll-proportion="0.41547278">
           <folding />
         </state>
       </provider>

@@ -6,6 +6,7 @@ from django.utils.translation import ugettext as _
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.template import RequestContext
+from django.utils.encoding import force_unicode, smart_unicode, smart_str
 from google.appengine.api import images
 from pprint import pprint
 from django.conf import settings
@@ -18,16 +19,19 @@ from google.appengine.api import memcache
 from google.appengine.api import mail
 from google.appengine.api import users as googleUsers
 
-import gdata.docs
-import gdata.docs.service
-from gdata import client
-from atom.service import AtomService
+from library.system.BeautifulSoup import BeautifulStoneSoup
+
+import gdata.docs.data
+import gdata.docs.client
+
 import timeit
 import re
 import random
 import datetime
 from datetime import timedelta
 import os
+import base64
+
 
 class view: pass
 
@@ -44,14 +48,15 @@ def index(request, id=None):
 
 @render_to("controllers/index/docs.html")
 def docs(request, id=None):
-	gd_client = gdata.docs.service.DocsService(source='bereg-bereg_cn-v1')
-	gd_client.ClientLogin('pivo@pivolan.ru', 'nigertudasuda')
-	feeds = view.feeds = gd_client.GetDocumentListFeed()
-	q = gdata.docs.service.DocumentQuery()
-	q['title'] = id.encode('UTF-8')
-	q['title-exact'] = 'true'
-	view.feed = gd_client.Query(q.ToUri())
-	view.html = gdata.docs.client.DocsClient.GetFileContent(feeds.entry[0])
+	client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
+	client.ssl = True  # Force all API requests through HTTPS
+	client.http_client.debug = True  # Set to True for debugging HTTP requests
+	client.ClientLogin('pivo@pivolan.ru', 'nigertudasuda', client.source)
+	feeds = view.feeds = client.GetDocList(uri='/feeds/default/private/full?max-results=5')
+
+	view.entry = client.GetFileContent('/feeds/download/documents/Export?id=1ebCRp9Q0_7bxNwtAZr4XYC2sGOdXk3ij6kEpmi-P64Y&format=html')
+	view.entry = BeautifulStoneSoup(view.entry, convertEntities=BeautifulStoneSoup.HTML_ENTITIES).contents[0]
+
 	return view.__dict__
 
 
