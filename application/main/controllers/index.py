@@ -55,8 +55,9 @@ def docs(request, id=None):
 	feeds = view.feeds = client.GetDocList(uri='/feeds/default/private/full?max-results=5')
 
 	view.entry = client.GetFileContent('/feeds/download/documents/Export?id=1ebCRp9Q0_7bxNwtAZr4XYC2sGOdXk3ij6kEpmi-P64Y&format=html')
-	view.entry = BeautifulStoneSoup(view.entry, convertEntities=BeautifulStoneSoup.HTML_ENTITIES).contents[0]
-
+	html = BeautifulStoneSoup(view.entry, convertEntities=BeautifulStoneSoup.HTML_ENTITIES)
+	view.body = html.body.renderContents()
+	view.style = html.style.prettify()
 	return view.__dict__
 
 

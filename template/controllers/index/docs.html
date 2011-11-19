@@ -1,6 +1,9 @@
 {% extends "layouts/bereg-cn.html" %}
+{% block add_css %}{{ style|safe }}{% endblock %}
 {% block main_content %}
-	<p>{{ entry|safe }}</p>
+	<p>
+		{{ body|safe }}
+	</p>
 	{% for entry in feeds.entry %}
 		<p>{{ entry.title.text }}</p>
 		<p>{{ entry.resource_id.text }}</p>
