@@ -1,0 +1,36 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+.head {
+	margin-bottom: 5px;
+}
+.clear{
+	height: 1px;
+	clear: both;
+}
+.logo {
+	background-image: url(/public/img/layout/bereg_cn/logo.png);
+	width: 195px;
+	height: 66px;
+	float: left;
+}
+
+.menu {
+	width: 200px;
+	float: left;
+}
+
+.body {
+	width: auto;
+	margin-left: 200px;
+}
+
+.topmenu {
+	width: auto;
+	margin-left: 200px;
+}

@@ -29,6 +29,7 @@ class view:
 
 @render_to("admin/index.html")
 def index(request):
+
 	return view.__dict__
 
 

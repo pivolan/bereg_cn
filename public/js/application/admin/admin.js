@@ -50,4 +50,3 @@ $(document).ready(function(){              // по окончанию загру
    });
 
 });   //document ready end
-

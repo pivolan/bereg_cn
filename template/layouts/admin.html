@@ -1,10 +1,41 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 		"http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
-	<title></title>
+	{% block head %}
+		<title>{% block title %}ООО "Берег" {% endblock %}</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+		<meta http-equiv="Content-Style-Type" content="text/css"/>
+
+		<link rel="shortcut icon" href="/public/img/layout/bereg_cn/favicon.png" type="image/png"/>
+
+		{% block add_css %}{% endblock %}
+		<link rel="stylesheet" type="text/css" href="/public/css/layout/bereg_cn/admin.css"/>
+
+		<script type="text/javascript" src="/public/js/jquery/jquery-1.3.2.js"></script>
+		{% block add_js %}{% endblock %}
+	{% endblock %}
 </head>
 <body>
+<div class="head">
+	<div class="logo"></div>
+	<div class="topmenu">
+		<h2>Административная панель сайта "ООО Берег"</h2>
 
+		<a class="login" href="/login">login</a> | 
+		<a class="login" href="/logout">logout</a> | <span class="user_name">{{ user.email|default:'anonymouse' }}</span>
+	</div>
+	<div class="clear"></div>
+</div>
+<div class="menu">
+	{% block menu %}
+	{% endblock menu %}
+</div>
+<div class="body">
+	{% block body %}
+	{% endblock body %}
+</div>
+<div class="clear"></div>
 </body>
 </html>

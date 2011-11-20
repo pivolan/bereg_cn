@@ -6,7 +6,6 @@ from django.utils.translation import ugettext as _
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.template import RequestContext
-from django.utils.encoding import force_unicode, smart_unicode, smart_str
 from google.appengine.api import images
 from pprint import pprint
 from django.conf import settings
@@ -51,7 +50,7 @@ def docs(request, id=None):
 	client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
 	client.ssl = True  # Force all API requests through HTTPS
 	client.http_client.debug = True  # Set to True for debugging HTTP requests
-	client.ClientLogin('pivo@pivolan.ru', '*****', client.source)
+	client.ClientLogin('pivo@pivolan.ru', 'nigertudasuda', client.source)
 	feeds = view.feeds = client.GetDocList(uri='/feeds/default/private/full?max-results=5')
 
 	view.entry = client.GetFileContent('/feeds/download/documents/Export?id=1ebCRp9Q0_7bxNwtAZr4XYC2sGOdXk3ij6kEpmi-P64Y&format=html')
@@ -102,11 +101,11 @@ def feedback(request):
 
 
 def login(request):
-	return HttpResponseRedirect(redirect_to=googleUsers.create_login_url('/'))
+	return HttpResponseRedirect(redirect_to=googleUsers.create_login_url(request.META['HTTP_REFERER']))
 
 
 def logout(request):
-	return HttpResponseRedirect(redirect_to=googleUsers.create_logout_url('/'))
+	return HttpResponseRedirect(redirect_to=googleUsers.create_logout_url(request.META['HTTP_REFERER']))
 
 
 @render_to("controllers/index/test.html")
