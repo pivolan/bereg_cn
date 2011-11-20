@@ -7,7 +7,10 @@
 	<link rel="stylesheet" type="text/css" href="/public/css/application/admin/admin.css"/>
 {% endblock add_css %}
 {% block add_js %}
+	<script src="/public/js/jquery/jquery.jstree.js"></script>
+	<script src="/public/js/jquery/jquery.cookie.js"></script>
 	<script src="/public/js/application/admin/admin.js"></script>
+	<script src="/public/js/application/admin/index/init.js"></script>
 {% endblock add_js %}
 
 {% block menu %}
@@ -15,12 +18,16 @@
 {% endblock menu %}
 
 {% block body %}
-	<a href="{{ url }}">Login|logout</a>
-	{% for user in users %}
-		<p><a href="/admin/edit/{{ user.key.id }}">{{ user.key.id }}:{{ user.username }} {{ user.first_name }}</a>
-			{% for child in user.children %}
-				{{ child.key.id }}:{{ child.username }} |
-			{% endfor %}
-		</p>
+	<h2>Дерево</h2>
+	<div id="jstree">
+	</div>
+	<h2>список папок</h2>
+	{% for entry in feeds.entry %}
+		<p>{{ entry.title.text }}</p>
+		<p>{{ entry.get_document_type }}</p>
+		<p class="pad"><a href="/admin/{{ entry.resource_id.text }}">{{ entry.resource_id.text }}</a></p>
 	{% endfor %}
+	<h2>документ</h2>
+	<h3>{{ title }}</h3>
+	{{ body|safe }}
 {% endblock body %}

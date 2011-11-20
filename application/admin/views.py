@@ -1,20 +1,26 @@
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
+from django.utils import simplejson
 from django.shortcuts import render_to_response
 from django.template.loader import render_to_string
 from django.utils.translation import ugettext as _
-from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.template import RequestContext
 from google.appengine.api import images
 from pprint import pprint
 
 from library.system.util import render_to
+from library.system.util import login_required
 from application.main.models import *
 
 from google.appengine.api import memcache
 from google.appengine.api import mail
 from google.appengine.api import users as googleUsers
+
+from library.system.BeautifulSoup import BeautifulStoneSoup
+
+import gdata.docs.data
+import gdata.docs.client
 
 import timeit
 import re
@@ -26,11 +32,68 @@ import os
 class view:
 	pass
 
-
+@login_required('/')
 @render_to("admin/index.html")
-def index(request):
-
+def index(request, resource_id=False):
+#	client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
+#	client.ssl = True  # Force all API requests through HTTPS
+#	client.http_client.debug = True  # Set to True for debugging HTTP requests
+#	client.ClientLogin('pivo@pivolan.ru', 'nigertudasuda', client.source)
+#	if resource_id:
+#		if resource_id.find('folder:') >= 0:
+#			view.feeds = client.GetDocList(uri='/feeds/default/private/full/%s/contents?showfolders=true' % resource_id)
+#		elif resource_id.find('document:') >= 0:
+#			entry = client.GetFileContent('/feeds/download/documents/Export?id=%s&format=html' % resource_id.replace('document:', ''))
+#			html = BeautifulStoneSoup(entry, convertEntities=BeautifulStoneSoup.HTML_ENTITIES)
+#			view.title = html.head.title.renderContents()
+#			view.body = html.body.renderContents()
+#			view.style = html.style.prettify()
+#		else:
+#			view.feeds = client.GetDocList(uri='/feeds/default/private/full?showfolders=true')
+#	else:
+#		view.feeds = client.GetDocList(uri='/feeds/default/private/full?showfolders=true')
+	if not googleUsers.is_current_user_admin():
+		return HttpResponseRedirect(redirect_to=googleUsers.create_login_url('/'))
 	return view.__dict__
+
+
+def docstree(request, resource_id=False):
+	response_data = False
+	feeds = False
+	if request.is_ajax():
+		client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
+		client.ssl = True  # Force all API requests through HTTPS
+		client.http_client.debug = True  # Set to True for debugging HTTP requests
+		client.ClientLogin('pivo@pivolan.ru', 'nigertudasuda', client.source)
+
+		if 'id' in request.GET:
+			resource_id = request.GET['id']
+			if resource_id:
+				if resource_id.find('folder:') >= 0:
+					feeds = client.GetDocList(uri='/feeds/default/private/full/%s/contents?showfolders=true' % resource_id)
+		else:
+			feeds = client.GetDocList(uri='/feeds/default/private/full?showfolders=true')
+			for entry in feeds.entry:
+				pass
+
+		if feeds:
+			response_data = []
+			for entry in feeds.entry:
+				item = {
+					'data': entry.title.text,
+					'metadata': {'id': entry.resource_id.text},
+					}
+				if entry.get_document_type() == 'folder':
+					item['state'] = 'closed'
+
+				response_data.append(item)
+			#	response_data = {
+			#		'data':'vasy',
+			#	  'metadata':{'vasya':'asdf','class':'niger','id':321555},
+			#	  'state':'open',
+			#	  'children':[{'data':'child1', 'state':'closed', 'metadata':{'vasya':'111','class':'111','id':request.GET['id']},},'child2']
+			#	}
+	return HttpResponse(simplejson.dumps(response_data), mimetype="application/json")
 
 
 @render_to("controllers/index/admin.html")

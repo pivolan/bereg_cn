@@ -5,4 +5,8 @@ span.warning{
 ol.sc, ol.eq, .invisible{
 
 }
+.pad{
+	margin: 3px;
+	border-bottom: 1px red solid;
+}
 

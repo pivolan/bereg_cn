@@ -1,6 +1,7 @@
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.template.loader import render_to_string
+from django.http import HttpResponseRedirect
 
 def render_to(template):
 	def renderer(function):
@@ -42,3 +43,22 @@ class AuthenticationMiddleware(object):
 
 		request.is_admin = users.is_current_user_admin()
 		return None
+
+
+def login_required(redirect_to):
+	def wrapper(fn):
+		def login(request, id, **kwargs):
+			output = fn(request, id, **kwargs)
+			return output
+
+		return login
+
+	return wrapper
+
+
+def permission_required(perm, login_url=None):
+	"""
+			Decorator for views that checks whether a user has a particular permission
+			enabled, redirecting to the log-in page if necessary.
+			"""
+	return user_passes_test(lambda u: u.has_perm(perm), login_url=login_url)
