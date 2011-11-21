@@ -47,6 +47,12 @@ class EasyPage(db.Model):
 	seo = db.ReferenceProperty(Seo, collection_name='easyPages')
 
 
+class PageDocs(db.Model):
+	title = db.StringProperty(required=True)
+	seo = db.ReferenceProperty(Seo, collection_name='easyPages')
+	father = db.SelfReferenceProperty(collection_name='children')
+
+
 class menuTop(db.Model):
 	url = db.StringProperty()
 	easyPage = db.ReferenceProperty(EasyPage, collection_name='menuTops', required=True)

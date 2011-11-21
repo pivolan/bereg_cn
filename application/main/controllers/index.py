@@ -50,7 +50,7 @@ def docs(request, id=None):
 	client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
 	client.ssl = True  # Force all API requests through HTTPS
 	client.http_client.debug = True  # Set to True for debugging HTTP requests
-	client.ClientLogin('pivo@pivolan.ru', 'nigertudasuda', client.source)
+	client.ClientLogin(settings.DOCS_EMAIL, settings.DOCS_PASS, client.source)
 	feeds = view.feeds = client.GetDocList(uri='/feeds/default/private/full?showfolders=true')
 
 	view.entry = client.GetFileContent('/feeds/download/documents/Export?id=1ebCRp9Q0_7bxNwtAZr4XYC2sGOdXk3ij6kEpmi-P64Y&format=html')

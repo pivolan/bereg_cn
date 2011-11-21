@@ -8,6 +8,7 @@ from django.contrib.auth import authenticate, login, logout
 from django.template import RequestContext
 from google.appengine.api import images
 from pprint import pprint
+from django.conf import settings
 
 from library.system.util import render_to
 from library.system.util import login_required
@@ -35,23 +36,6 @@ class view:
 @login_required('/')
 @render_to("admin/index.html")
 def index(request, resource_id=False):
-#	client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
-#	client.ssl = True  # Force all API requests through HTTPS
-#	client.http_client.debug = True  # Set to True for debugging HTTP requests
-#	client.ClientLogin('pivo@pivolan.ru', 'nigertudasuda', client.source)
-#	if resource_id:
-#		if resource_id.find('folder:') >= 0:
-#			view.feeds = client.GetDocList(uri='/feeds/default/private/full/%s/contents?showfolders=true' % resource_id)
-#		elif resource_id.find('document:') >= 0:
-#			entry = client.GetFileContent('/feeds/download/documents/Export?id=%s&format=html' % resource_id.replace('document:', ''))
-#			html = BeautifulStoneSoup(entry, convertEntities=BeautifulStoneSoup.HTML_ENTITIES)
-#			view.title = html.head.title.renderContents()
-#			view.body = html.body.renderContents()
-#			view.style = html.style.prettify()
-#		else:
-#			view.feeds = client.GetDocList(uri='/feeds/default/private/full?showfolders=true')
-#	else:
-#		view.feeds = client.GetDocList(uri='/feeds/default/private/full?showfolders=true')
 	if not googleUsers.is_current_user_admin():
 		return HttpResponseRedirect(redirect_to=googleUsers.create_login_url('/'))
 	return view.__dict__
@@ -64,7 +48,7 @@ def docstree(request, resource_id=False):
 		client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
 		client.ssl = True  # Force all API requests through HTTPS
 		client.http_client.debug = True  # Set to True for debugging HTTP requests
-		client.ClientLogin('pivo@pivolan.ru', 'nigertudasuda', client.source)
+		client.ClientLogin(settings.DOCS_EMAIL, settings.DOCS_PASS, client.source)
 
 		if 'id' in request.GET:
 			resource_id = request.GET['id']
@@ -87,12 +71,6 @@ def docstree(request, resource_id=False):
 					item['state'] = 'closed'
 
 				response_data.append(item)
-			#	response_data = {
-			#		'data':'vasy',
-			#	  'metadata':{'vasya':'asdf','class':'niger','id':321555},
-			#	  'state':'open',
-			#	  'children':[{'data':'child1', 'state':'closed', 'metadata':{'vasya':'111','class':'111','id':request.GET['id']},},'child2']
-			#	}
 	return HttpResponse(simplejson.dumps(response_data), mimetype="application/json")
 
 
