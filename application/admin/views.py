@@ -11,12 +11,13 @@ from pprint import pprint
 from django.conf import settings
 
 from library.system.util import render_to
-from library.system.util import login_required
+from library.system.util import admin_required
 from application.main.models import *
 
 from google.appengine.api import memcache
 from google.appengine.api import mail
 from google.appengine.api import users as googleUsers
+from google.appengine.api.datastore import Key
 
 from library.system.BeautifulSoup import BeautifulStoneSoup
 
@@ -33,14 +34,23 @@ import os
 class view:
 	pass
 
-@login_required('/')
+
+@admin_required('/')
 @render_to("admin/index.html")
 def index(request, resource_id=False):
 	if not googleUsers.is_current_user_admin():
 		return HttpResponseRedirect(redirect_to=googleUsers.create_login_url('/'))
+
+	#	client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
+	#	client.ssl = True  # Force all API requests through HTTPS
+	#	client.http_client.debug = True  # Set to True for debugging HTTP requests
+	#	client.ClientLogin(settings.DOCS_EMAIL, settings.DOCS_PASS, client.source)
+	#
+	#	view.feeds = client.GetDocList(uri='/feeds/default/private/full?showfolders=true')
 	return view.__dict__
 
 
+@admin_required('/')
 def docstree(request, resource_id=False):
 	response_data = False
 	feeds = False
@@ -49,16 +59,20 @@ def docstree(request, resource_id=False):
 		client.ssl = True  # Force all API requests through HTTPS
 		client.http_client.debug = True  # Set to True for debugging HTTP requests
 		client.ClientLogin(settings.DOCS_EMAIL, settings.DOCS_PASS, client.source)
-
+		docs = PageDocs.all(keys_only=True)
 		if 'id' in request.GET:
 			resource_id = request.GET['id']
 			if resource_id:
 				if resource_id.find('folder:') >= 0:
-					feeds = client.GetDocList(uri='/feeds/default/private/full/%s/contents?showfolders=true' % resource_id)
+					feeds = memcache.get(resource_id)
+					if not feeds:
+						feeds = client.GetDocList(uri='/feeds/default/private/full/%s/contents?showfolders=true' % resource_id)
+						memcache.add(resource_id, feeds, 60)
 		else:
-			feeds = client.GetDocList(uri='/feeds/default/private/full?showfolders=true')
-			for entry in feeds.entry:
-				pass
+			feeds = memcache.get('root')
+			if not feeds:
+				feeds = client.GetDocList(uri='/feeds/default/private/full?showfolders=true')
+				memcache.add('root', feeds, 60)
 
 		if feeds:
 			response_data = []
@@ -66,11 +80,35 @@ def docstree(request, resource_id=False):
 				item = {
 					'data': entry.title.text,
 					'metadata': {'id': entry.resource_id.text},
+				  'attr':{}
 					}
 				if entry.get_document_type() == 'folder':
 					item['state'] = 'closed'
-
+				if Key.from_path('main_pagedocs', entry.resource_id.text) in docs:
+					item['attr']['class'] = 'jstree-checked'
 				response_data.append(item)
+
+	return HttpResponse(simplejson.dumps(response_data), mimetype="application/json")
+
+
+@admin_required('/')
+def add(request):
+	response_data = False
+	if request.is_ajax() and request.method == "POST":
+		if 'id' in request.POST and 'title' in request.POST:
+			doc = PageDocs(key_name=request.POST['id'].strip(), title=request.POST['title'].strip())
+			doc.put()
+		response_data = {'hi': 'how_are_you'}
+	return HttpResponse(simplejson.dumps(response_data), mimetype="application/json")
+
+
+@admin_required('/')
+def remove(request):
+	response_data = False
+	if request.is_ajax() and request.method == "POST":
+		if 'id' in request.POST:
+			PageDocs.get_by_key_name(request.POST['id'].strip()).delete()
+			response_data = {'remove': 'ok'}
 	return HttpResponse(simplejson.dumps(response_data), mimetype="application/json")
 
 

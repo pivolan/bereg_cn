@@ -49,7 +49,6 @@ class EasyPage(db.Model):
 
 class PageDocs(db.Model):
 	title = db.StringProperty(required=True)
-	seo = db.ReferenceProperty(Seo, collection_name='easyPages')
 	father = db.SelfReferenceProperty(collection_name='children')
 
 

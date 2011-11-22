@@ -2,6 +2,7 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.template.loader import render_to_string
 from django.http import HttpResponseRedirect
+from google.appengine.api import users as googleUsers
 
 def render_to(template):
 	def renderer(function):
@@ -49,6 +50,20 @@ def login_required(redirect_to):
 	def wrapper(fn):
 		def login(request, id, **kwargs):
 			output = fn(request, id, **kwargs)
+			return output
+
+		return login
+
+	return wrapper
+
+
+def admin_required(redirect_to):
+	def wrapper(fn):
+		def login(request, *kwarg, **kwargs):
+			output = fn(request, *kwarg, **kwargs)
+			if not googleUsers.is_current_user_admin():
+				return HttpResponseRedirect(redirect_to=googleUsers.create_login_url(redirect_to))
+
 			return output
 
 		return login

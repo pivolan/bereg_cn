@@ -21,10 +21,16 @@
 	<h2>Дерево</h2>
 	<div id="jstree">
 	</div>
+	<h2>доки</h2>
+	{% for doc in docs %}
+		<p>{{ doc.title }}</p>
+		<p>{{ doc.key }}</p>
+	{% endfor %}
 	<h2>список папок</h2>
 	{% for entry in feeds.entry %}
 		<p>{{ entry.title.text }}</p>
 		<p>{{ entry.get_document_type }}</p>
+		<p>{{ entry.content.src }}</p>
 		<p class="pad"><a href="/admin/{{ entry.resource_id.text }}">{{ entry.resource_id.text }}</a></p>
 	{% endfor %}
 	<h2>документ</h2>
