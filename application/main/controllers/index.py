@@ -53,10 +53,48 @@ def docs(request, id=None):
 	client.ClientLogin(settings.DOCS_EMAIL, settings.DOCS_PASS, client.source)
 	feeds = view.feeds = client.GetDocList(uri='/feeds/default/private/full?showfolders=true')
 
-	view.entry = client.GetFileContent('/feeds/download/documents/Export?id=1ebCRp9Q0_7bxNwtAZr4XYC2sGOdXk3ij6kEpmi-P64Y&format=html')
+	view.entry = client.GetFileContent(
+		'/feeds/download/documents/Export?id=1ebCRp9Q0_7bxNwtAZr4XYC2sGOdXk3ij6kEpmi-P64Y&format=html')
 	html = BeautifulStoneSoup(view.entry, convertEntities=BeautifulStoneSoup.HTML_ENTITIES)
 	view.body = html.body.renderContents()
 	view.style = html.style.prettify()
+	return view.__dict__
+
+
+@render_to("controllers/index/docs.html")
+def document(request, q=None):
+	client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
+	client.ssl = True  # Force all API requests through HTTPS
+	client.http_client.debug = True  # Set to True for debugging HTTP requests
+	client.ClientLogin(settings.DOCS_EMAIL, settings.DOCS_PASS, client.source)
+	feeds = client.GetDocList(
+		uri='/feeds/default/private/full?title=%s&title-exact=true&max-results=1&showfolders=true' % q.encode('UTF-8'))
+
+	for doc in feeds.entry:
+		entry = client.GetFileContent(
+			'/feeds/download/documents/Export?id=%s&format=html' % doc.resource_id.text.replace('document:', ''))
+		view.doc = doc
+		html = BeautifulStoneSoup(entry, convertEntities=BeautifulStoneSoup.HTML_ENTITIES)
+		view.body = html.body.renderContents()
+		view.style = html.style.prettify()
+		break
+	return view.__dict__
+
+
+@render_to("controllers/index/catalogue.html")
+def catalogue(request, q=None):
+	client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
+	client.ssl = True  # Force all API requests through HTTPS
+	client.http_client.debug = True  # Set to True for debugging HTTP requests
+	client.ClientLogin(settings.DOCS_EMAIL, settings.DOCS_PASS, client.source)
+	feeds = client.GetDocList(
+		uri='/feeds/default/private/full?title=%s&title-exact=true&max-results=1&showfolders=true' % q.encode('UTF-8'))
+
+	for folder in feeds.entry:
+		view.feeds = client.GetDocList(
+			uri='/feeds/default/private/full/%s/contents?showfolders=true' % folder.resource_id.text)
+		view.folder = folder
+		break
 	return view.__dict__
 
 

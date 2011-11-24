@@ -1,21 +1,13 @@
 {% extends "layouts/bereg-cn.html" %}
 {% block add_css %}{{ style|safe }}{% endblock %}
 {% block main_content %}
+	<h1>{{ doc.title.text }}</h1>
 	<p>
 		{{ body|safe }}
 	</p>
-	{% for entry in feeds.entry %}
-		<p>{{ entry.title.text }}</p>
-		<p>{{ entry.resource_id.text }}</p>
-		<p>--------------</p>
+	<p>----</p>
+	{% for inFolder in doc.inFolders %}
+		<p>{{ inFolder.title }}</p>
 	{% endfor %}
 
-	<div class="clear">резделитель</div>
-	
-	<p>{{ feed }}</p>
-	<p>{{ response_body }}</p>
-	<h1>full text</h1>
-	<div>
-	{{ html }}
-	</div>
 {% endblock %}
