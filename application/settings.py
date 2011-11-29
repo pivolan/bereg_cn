@@ -74,6 +74,8 @@ LOGIN_URL = '/'
 LOGOUT_URL = '/'
 LOGIN_REDIRECT_URL = '/'
 
+TO_CACHE_DOCS_TIME = 500
+
 INSTALLED_APPS = (
 	'django.contrib.contenttypes',
 	'django.contrib.sites',

@@ -34,7 +34,6 @@ import os
 class view:
 	pass
 
-
 @admin_required('/')
 @render_to("admin/index.html")
 def index(request, resource_id=False):
@@ -67,12 +66,12 @@ def docstree(request, resource_id=False):
 					feeds = memcache.get(resource_id)
 					if not feeds:
 						feeds = client.GetDocList(uri='/feeds/default/private/full/%s/contents?showfolders=true' % resource_id)
-						memcache.add(resource_id, feeds, 60)
+						memcache.add(resource_id, feeds, settings.TO_CACHE_DOCS_TIME)
 		else:
 			feeds = memcache.get('root')
 			if not feeds:
 				feeds = client.GetDocList(uri='/feeds/default/private/full?showfolders=true')
-				memcache.add('root', feeds, 60)
+				memcache.add('root', feeds, settings.TO_CACHE_DOCS_TIME)
 
 		if feeds:
 			response_data = []
@@ -84,6 +83,8 @@ def docstree(request, resource_id=False):
 					}
 				if entry.get_document_type() == 'folder':
 					item['state'] = 'closed'
+				else:
+					item['attr']['rel'] = 'document'
 				if Key.from_path('main_pagedocs', entry.resource_id.text) in docs:
 					item['attr']['class'] = 'jstree-checked'
 				response_data.append(item)
@@ -125,3 +126,9 @@ def login(request):
 
 def logout(request):
 	return HttpResponseRedirect(redirect_to=googleUsers.create_logout_url('/'))
+
+
+@render_to("controllers/index/clear_cache.html")
+def clear_cache(request):
+	memcache.flush_all()
+	return {}

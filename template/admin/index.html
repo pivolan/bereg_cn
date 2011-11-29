@@ -19,6 +19,18 @@
 
 {% block body %}
 	<h2>Дерево</h2>
+	<div id="mmenu" style="height:30px; overflow:auto;">
+<input type="button" id="add_folder" value="add folder" style="display:block; float:left;"/>
+<input type="button" id="add_document" value="add file" style="display:block; float:left;"/>
+<input type="button" id="rename" value="rename" style="display:block; float:left;"/>
+<input type="button" id="remove" value="remove" style="display:block; float:left;"/>
+<input type="button" id="cut" value="cut" style="display:block; float:left;"/>
+<input type="button" id="copy" value="copy" style="display:block; float:left;"/>
+<input type="button" id="paste" value="paste" style="display:block; float:left;"/>
+<input type="button" id="clear_search" value="clear" style="display:block; float:right;"/>
+<input type="button" id="search" value="search" style="display:block; float:right;"/>
+<input type="text" id="text" value="" style="display:block; float:right;" />
+</div>
 	<div id="jstree">
 	</div>
 	<h2>доки</h2>
