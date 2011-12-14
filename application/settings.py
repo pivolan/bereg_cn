@@ -22,6 +22,7 @@ ADMIN_EMAIL = "pivolan@gmail.com"
 
 DOCS_EMAIL = 'beregchine@gmail.com'
 DOCS_PASS = 'chukamaka'
+ROOT_KEY_DB_MEMCACHE = 'root_key_docs'
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.

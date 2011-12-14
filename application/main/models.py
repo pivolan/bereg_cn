@@ -35,6 +35,7 @@ class Users(db.Model):
 	def is_current_user_admin(self):
 		return googleUsers.is_current_user_admin()
 
+
 class Seo(db.Model):
 	description = db.StringProperty()
 	meta = db.StringListProperty()
@@ -49,20 +50,5 @@ class EasyPage(db.Model):
 
 class PageDocs(db.Model):
 	title = db.StringProperty(required=True)
+	seo = db.ReferenceProperty(Seo, collection_name='PageDocs')
 	father = db.SelfReferenceProperty(collection_name='children')
-
-
-class menuTop(db.Model):
-	url = db.StringProperty()
-	easyPage = db.ReferenceProperty(EasyPage, collection_name='menuTops', required=True)
-	father = db.SelfReferenceProperty(collection_name='children')
-
-
-class menuLeft(db.Model):
-	url = db.StringProperty(required=True)
-	easyPage = db.ReferenceProperty(EasyPage, collection_name='menuLeft', required=True)
-
-
-class treeLink(db.Model):
-	father = db.SelfReferenceProperty(collection_name='children')
-	easyPage = db.ReferenceProperty(EasyPage, collection_name='treeLinks')

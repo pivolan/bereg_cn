@@ -113,7 +113,7 @@ def remove(request):
 	return HttpResponse(simplejson.dumps(response_data), mimetype="application/json")
 
 
-@render_to("controllers/index/admin.html")
+@render_to("main/admin.html")
 def test(request):
 	test_page = EasyPage(title=" Hello, this is first ", content=" hi how are you?")
 	test_page.put()
@@ -128,7 +128,7 @@ def logout(request):
 	return HttpResponseRedirect(redirect_to=googleUsers.create_logout_url('/'))
 
 
-@render_to("controllers/index/clear_cache.html")
+@render_to("main/clear_cache.html")
 def clear_cache(request):
 	memcache.flush_all()
 	return {}
