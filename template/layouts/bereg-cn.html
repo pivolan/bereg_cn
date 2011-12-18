@@ -8,8 +8,8 @@
 		<meta http-equiv="content-type" content="text/html;charset=utf-8"/>
 		<!--<base href="http://<?=$_SERVER[HTTP_HOST]?>/3/"> -->
 		<meta http-equiv="Content-Style-Type" content="text/css"/>
-		<meta name="description" content="{{ page.description }}"/>
-		<meta name="keywords" content="{{ page.keywords }}"/>
+		<meta content="{% block keywords %}{% endblock keywords %}" name="keywords">
+		<meta content="{% block description %}{% endblock description %}" name="description">
 		<meta name="verify-v1" content="jJqxLQ9GNjdm3bEziQI2m+7Yq+vWZf0TbBfWOrbJ3mU=">
 		<meta name="google-site-verification" content="aywoGPqLjZJKNNYw9c26cuBvVNZeZSe-_SO7WCL967M"/>
 		<meta name='a5b934010e06e34ad7d02dce56f425e2' content=''>
@@ -121,11 +121,8 @@
 							<!-- end left -->
 							<td>		   <!-- right -->
 								<div class="main_content">	   <!-- Body -->
-									{% block main_content %}
-									<h1>page.title</h1>
-
-									<p>page.content</p>
-									{% endblock %}
+									{% block body_title %}{% endblock %}
+									{% block body_text %}{% endblock %}
 								</div>
 								<!-- end Body -->
 							</td>

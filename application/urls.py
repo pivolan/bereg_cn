@@ -2,22 +2,17 @@ from django.conf.urls.defaults import *
 from django.conf import settings
 
 urlpatterns = patterns("",
-	(r"^$", "application.main.views.index"),
 	(r"^contacts$", "application.main.views.contacts"),
 	(r"^service", "application.main.views.service"),
 	(r"^study$", "application.main.views.study"),
 	(r"^feedback$", "application.main.views.feedback"),
-	(r"^page/(\d*)$", "application.main.views.index"),
-	(r"^docs/(.*)$", "application.main.views.docs"),
-	(r"^c/(.*)$", "application.main.views.catalogue"),
-	(r"^folder/(.*)$", "application.main.views.catalogue"),
-	(r"^document/(.*)$", "application.main.views.document"),
+
 	(r"^login$", "application.main.views.login"),
 	(r"^logout$", "application.main.views.logout"),
-	(r"^test$", "application.main.views.test"),
-	(r"^empty$", "application.main.views.empty"),
 
 	(r"^admin/", include("application.admin.urls")),
+	(r"^(.*)$", "application.main.views.index"),
+  
 
 #	(r"^test/*$", "application.main.views.test"),
 #	(r"^uf$", "application.main.views.formuser"),

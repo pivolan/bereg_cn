@@ -1,8 +1,16 @@
 {% extends "layouts/bereg-cn.html" %}
+{% block description %}{{ description }}{% endblock description %}
+{% block keywords %}{{ keywords }}{% endblock %}
 {% block add_css %}{{ style|safe }}{% endblock %}
-{% block main_content %}
-	<h1>{{ doc.title.text }}</h1>
-	<p>
-		{{ body|safe }}
-	</p>
+{% block title %}{{ head_title }}{% endblock  %}
+
+{% block body_title %}
+	<h1>{{ title }}</h1>
+{% endblock  %}
+
+{% block body_text %}
+	{% if is_admin %}
+		<p><a target="_blank" href="https://docs.google.com/document/d/{{ id }}/edit">редактировать</a></p>
+	{% endif %}
+	{{ body|safe }}
 {% endblock %}

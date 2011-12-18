@@ -2,8 +2,11 @@
 {% block add_css %}
 	<link rel="stylesheet" type="text/css" href="/public/css/application/default/index/catalogue.css"/>
 {% endblock %}
-{% block main_content %}
+{% block body_title %}
 	<h1>{{ folder.title.text }}</h1>
+{% endblock %}
+<h1>{{ folder.title.text }}</h1>
+{% block body_text %}
 	<table cellspacing="0" cellpadding="0" class="equip">
 		<tbody>
 		<tr class="row2">
@@ -13,11 +16,11 @@
 		{% for entry in feeds.entry %}
 			<tr>
 				<td class="t-auth">
-					<a href="/{{ entry.get_document_type }}/{{ entry.title.text }}">
+					<a href="/{{ entry.title.text }}">
 						<img src="/public/img/catalogue/{{ entry.get_document_type }}.png"/>
 					</a>
 				</td>
-				<td class="t-post"><a href="/{{ entry.get_document_type }}/{{ entry.title.text }}">{{ entry.title.text }}</a>
+				<td class="t-post"><a href="/{{ entry.title.text }}">{{ entry.title.text }}</a>
 
 					<div>
 						<p class="short_text">

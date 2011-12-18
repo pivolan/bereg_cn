@@ -24,6 +24,7 @@ import gdata.docs.data
 import gdata.docs.client
 
 import timeit
+import sys
 import re
 import random
 import datetime
@@ -34,67 +35,36 @@ import base64
 
 class view: pass
 
-
-@render_to("main/index.html")
-def index(request, id=None):
-	if id:
-		view.page = EasyPage.get_by_id(int(id))
-	else:
-		view.page = EasyPage.all().get()
-
-	return view.__dict__
+pages = {
+	'main': '1Y4XCUWEriqaDDjVYjJ0nzRsJL9XUDk1tokM6VKqHFaI',
+	}
 
 
-@render_to("main/docs.html")
-def docs(request, id=None):
-	client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
-	client.ssl = True  # Force all API requests through HTTPS
-	client.http_client.debug = True  # Set to True for debugging HTTP requests
-	client.ClientLogin(settings.DOCS_EMAIL, settings.DOCS_PASS, client.source)
-	feeds = view.feeds = client.GetDocList(uri='/feeds/default/private/full?showfolders=true')
+def index(request, q=None):
+	page = 'main'
+	result = {}
+	if q:
+		result_id = _get_doc_id_by_q(q)
+		print result_id
+		if result_id:
+			if result_id['is_folder']:
+				return catalogue(request, result_id['item'])
+			elif result_id['is_document']:
+				return document(request, result_id['id'])
 
-	view.entry = client.GetFileContent(
-		'/feeds/download/documents/Export?id=1ebCRp9Q0_7bxNwtAZr4XYC2sGOdXk3ij6kEpmi-P64Y&format=html')
-	html = BeautifulStoneSoup(view.entry, convertEntities=BeautifulStoneSoup.HTML_ENTITIES)
-	view.body = html.body.renderContents()
-	view.style = html.style.prettify()
-	return view.__dict__
+	return document(request, pages[page])
 
 
 @render_to("main/docs.html")
-def document(request, q=None):
-	client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
-	client.ssl = True  # Force all API requests through HTTPS
-	client.http_client.debug = True  # Set to True for debugging HTTP requests
-	client.ClientLogin(settings.DOCS_EMAIL, settings.DOCS_PASS, client.source)
-	feeds = client.GetDocList(
-		uri='/feeds/default/private/full?title=%s&title-exact=true&max-results=1&showfolders=true' % q.encode('UTF-8'))
-
-	for doc in feeds.entry:
-		entry = client.GetFileContent(
-			'/feeds/download/documents/Export?id=%s&format=html' % doc.resource_id.text.replace('document:', ''))
-		view.doc = doc
-		html = BeautifulStoneSoup(entry, convertEntities=BeautifulStoneSoup.HTML_ENTITIES)
-		view.body = html.body.renderContents()
-		view.style = html.style.prettify()
-		break
-	return view.__dict__
+def document(request, id):
+	return _get_doc(id)
 
 
 @render_to("main/catalogue.html")
-def catalogue(request, q=None):
-	client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
-	client.ssl = True  # Force all API requests through HTTPS
-	client.http_client.debug = True  # Set to True for debugging HTTP requests
-	client.ClientLogin(settings.DOCS_EMAIL, settings.DOCS_PASS, client.source)
-	feeds = client.GetDocList(
-		uri='/feeds/default/private/full?title=%s&title-exact=true&max-results=1&showfolders=true' % q.encode('UTF-8'))
-
-	for folder in feeds.entry:
-		view.feeds = client.GetDocList(
-			uri='/feeds/default/private/full/%s/contents?showfolders=true' % folder.resource_id.text)
-		view.folder = folder
-		break
+def catalogue(request, folder_gdata_item):
+	view.feeds = get_doc_list(
+		uri='/feeds/default/private/full/%s/contents?showfolders=true' % folder_gdata_item.resource_id.text)
+	view.folder = folder_gdata_item
 	return view.__dict__
 
 
@@ -138,19 +108,110 @@ def feedback(request):
 	return {'form': form}
 
 
+def _get_doc(id, use_cache=True):
+	if googleUsers.is_current_user_admin():
+		memcache.delete(id)
+
+	result = memcache.get(id)
+	if not result:
+		entry = get_exported_gdoc(id)
+
+		html = BeautifulStoneSoup(entry, convertEntities=BeautifulStoneSoup.HTML_ENTITIES)
+
+		head_title = ''
+		keywords = ''
+		description = ''
+
+		if html.body.div:
+			head_title = html.body.div.find(text=re.compile("title = .*"))
+			keywords = html.body.div.find(text=re.compile("keywords = .*"))
+			description = html.body.div.find(text=re.compile("description = .*"))
+		title = html.head.title.text
+
+		if head_title:
+			head_title = head_title.replace("title = ", '')
+		else:
+			head_title = title
+		if keywords:
+			keywords = keywords.replace("keywords = ", '')
+		if description:
+			description = description.replace("description = ", '')
+
+		[divs.extract() for divs in html.body.findAll('div')]
+		body = html.body.renderContents()
+		style = html.style.prettify()
+
+		result = {
+			'entry': entry,
+			'title': title,
+			'html': html,
+			'body': body.replace('http:///', '/'),
+			'style': style,
+			'id': id,
+			'head_title': head_title,
+			'keywords': keywords,
+			'description': description,
+			}
+		if use_cache:
+			memcache.add(id, result)
+	return result
+
+
+def _get_doc_id_by_q(q):
+	q = q.encode('UTF-8')
+	result = None
+	if googleUsers.is_current_user_admin():
+		memcache.delete(q)
+	else:
+		result = memcache.get(q)
+	if not result:
+		uri = '/feeds/default/private/full?title=%s&title-exact=true&max-results=1&showfolders=false' % q
+		feeds = get_doc_list(uri)
+		print feeds
+		for doc in feeds.entry:
+			folders = doc.InFolders()
+			document_type = doc.GetDocumentType()
+			result = {
+				'type': document_type,
+				'is_folder': (document_type == 'folder'),
+				'is_document': (document_type == 'document'),
+				'id': doc.resource_id.text.replace(document_type + ':', ''),
+				'full_id': doc.resource_id.text,
+				'folders': folders,
+			  'item':doc,
+				}
+			memcache.set(q, result)
+
+	return result
+
+
+def get_doc_list(uri):
+	client = init_gdata_client()
+	feeds = client.GetDocList(uri=uri)
+	return feeds
+
+
+def get_exported_gdoc(id):
+	client = init_gdata_client()
+	entry = client.GetFileContent('/feeds/download/documents/Export?id=%s&format=html' % id)
+	return entry
+
+
+client = None
+
+def init_gdata_client():
+	global client, _get_doc_id_by_q
+	if not client:
+		client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
+		client.ssl = True # Force all API requests through HTTPS
+		client.http_client.debug = True # Set to True for debugging HTTP requests
+		client.ClientLogin(settings.DOCS_EMAIL, settings.DOCS_PASS, client.source)
+	return client
+
+
 def login(request):
 	return HttpResponseRedirect(redirect_to=googleUsers.create_login_url(request.META['HTTP_REFERER']))
 
 
 def logout(request):
 	return HttpResponseRedirect(redirect_to=googleUsers.create_logout_url(request.META['HTTP_REFERER']))
-
-
-@render_to("main/test.html")
-def test(request):
-	return {}
-
-
-@render_to("main/empty.html")
-def empty(request):
-	return {}
