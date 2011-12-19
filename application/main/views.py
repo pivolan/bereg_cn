@@ -35,6 +35,10 @@ import base64
 
 class view: pass
 
+
+class Gdoc:
+	client = None
+
 pages = {
 	'main': '1Y4XCUWEriqaDDjVYjJ0nzRsJL9XUDk1tokM6VKqHFaI',
 	}
@@ -44,13 +48,13 @@ def index(request, q=None):
 	page = 'main'
 	result = {}
 	if q:
-		result_id = _get_doc_id_by_q(q)
-		print result_id
-		if result_id:
-			if result_id['is_folder']:
-				return catalogue(request, result_id['item'])
-			elif result_id['is_document']:
-				return document(request, result_id['id'])
+		doc = _get_doc_id_by_q(q)
+		if doc:
+			document_type = doc.GetDocumentType()
+			if document_type == 'folder':
+				return catalogue(request, doc)
+			elif document_type == 'document':
+				return document(request, doc.resource_id.text.replace(document_type + ':', ''))
 
 	return document(request, pages[page])
 
@@ -62,7 +66,8 @@ def document(request, id):
 
 @render_to("main/catalogue.html")
 def catalogue(request, folder_gdata_item):
-	view.feeds = get_doc_list(
+	client = init_gdata_client()
+	view.feeds = client.GetDocList(
 		uri='/feeds/default/private/full/%s/contents?showfolders=true' % folder_gdata_item.resource_id.text)
 	view.folder = folder_gdata_item
 	return view.__dict__
@@ -89,9 +94,9 @@ def feedback(request):
 		form = feedback_form(request.POST)
 		if form.is_valid():
 			mail.send_mail(sender=form.cleaned_data['email'],
-			               to=settings.ADMIN_EMAIL,
-			               subject=form.cleaned_data['title'],
-			               body=form.cleaned_data['text'])
+						   to=settings.ADMIN_EMAIL,
+						   subject=form.cleaned_data['title'],
+						   body=form.cleaned_data['text'])
 	else:
 		initial_data = {}
 		if request.user:
@@ -158,16 +163,16 @@ def _get_doc(id, use_cache=True):
 
 
 def _get_doc_id_by_q(q):
-	q = q.encode('UTF-8')
+	feeds = get_doc_list(q)
+	for doc in feeds.entry:
+		return doc
 	result = None
 	if googleUsers.is_current_user_admin():
 		memcache.delete(q)
 	else:
 		result = memcache.get(q)
 	if not result:
-		uri = '/feeds/default/private/full?title=%s&title-exact=true&max-results=1&showfolders=false' % q
-		feeds = get_doc_list(uri)
-		print feeds
+		feeds = get_doc_list(q)
 		for doc in feeds.entry:
 			folders = doc.InFolders()
 			document_type = doc.GetDocumentType()
@@ -178,15 +183,16 @@ def _get_doc_id_by_q(q):
 				'id': doc.resource_id.text.replace(document_type + ':', ''),
 				'full_id': doc.resource_id.text,
 				'folders': folders,
-			  'item':doc,
+				'item': doc,
 				}
 			memcache.set(q, result)
 
 	return result
 
 
-def get_doc_list(uri):
+def get_doc_list(q):
 	client = init_gdata_client()
+	uri='/feeds/default/private/full?title=%s&title-exact=true&max-results=1&showfolders=true' % q.encode('UTF-8')
 	feeds = client.GetDocList(uri=uri)
 	return feeds
 
@@ -197,16 +203,13 @@ def get_exported_gdoc(id):
 	return entry
 
 
-client = None
-
 def init_gdata_client():
-	global client, _get_doc_id_by_q
-	if not client:
-		client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
-		client.ssl = True # Force all API requests through HTTPS
-		client.http_client.debug = True # Set to True for debugging HTTP requests
-		client.ClientLogin(settings.DOCS_EMAIL, settings.DOCS_PASS, client.source)
-	return client
+	if Gdoc.client is None:
+		Gdoc.client = gdata.docs.client.DocsClient(source='yourCo-yourAppName-v1')
+		Gdoc.client.ssl = True # Force all API requests through HTTPS
+		Gdoc.client.http_client.debug = True # Set to True for debugging HTTP requests
+		Gdoc.client.ClientLogin(settings.DOCS_EMAIL, settings.DOCS_PASS, Gdoc.client.source)
+	return Gdoc.client
 
 
 def login(request):
