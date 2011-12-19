@@ -48,14 +48,14 @@ def index(request, q=None):
 	page = 'main'
 	result = {}
 	if q:
-		doc = _get_doc_id_by_q(q)
+		doc = _get_doc_by_q(q)
 		if doc:
 			document_type = doc.GetDocumentType()
 			if document_type == 'folder':
 				return catalogue(request, doc)
 			elif document_type == 'document':
 				return document(request, doc.resource_id.text.replace(document_type + ':', ''))
-
+		return HttpResponseRedirect('/')
 	return document(request, pages[page])
 
 
@@ -67,8 +67,7 @@ def document(request, id):
 @render_to("main/catalogue.html")
 def catalogue(request, folder_gdata_item):
 	client = init_gdata_client()
-	view.feeds = client.GetDocList(
-		uri='/feeds/default/private/full/%s/contents?showfolders=true' % folder_gdata_item.resource_id.text)
+	view.feeds = get_doc_list_from_folder(folder_gdata_item.resource_id.text)
 	view.folder = folder_gdata_item
 	return view.__dict__
 
@@ -162,10 +161,7 @@ def _get_doc(id, use_cache=True):
 	return result
 
 
-def _get_doc_id_by_q(q):
-	feeds = get_doc_list(q)
-	for doc in feeds.entry:
-		return doc
+def _get_doc_by_q(q):
 	result = None
 	if googleUsers.is_current_user_admin():
 		memcache.delete(q)
@@ -174,19 +170,8 @@ def _get_doc_id_by_q(q):
 	if not result:
 		feeds = get_doc_list(q)
 		for doc in feeds.entry:
-			folders = doc.InFolders()
-			document_type = doc.GetDocumentType()
-			result = {
-				'type': document_type,
-				'is_folder': (document_type == 'folder'),
-				'is_document': (document_type == 'document'),
-				'id': doc.resource_id.text.replace(document_type + ':', ''),
-				'full_id': doc.resource_id.text,
-				'folders': folders,
-				'item': doc,
-				}
+			result = doc
 			memcache.set(q, result)
-
 	return result
 
 
@@ -201,6 +186,20 @@ def get_exported_gdoc(id):
 	client = init_gdata_client()
 	entry = client.GetFileContent('/feeds/download/documents/Export?id=%s&format=html' % id)
 	return entry
+
+def get_doc_list_from_folder(id):
+	result = None
+	if googleUsers.is_current_user_admin():
+		memcache.delete(id)
+	else:
+		result = memcache.get(id)
+	if not result:
+		client = init_gdata_client()
+		result = client.GetDocList(
+			uri='/feeds/default/private/full/%s/contents?showfolders=true' % id)
+		memcache.set(id, result)
+		
+	return result
 
 
 def init_gdata_client():

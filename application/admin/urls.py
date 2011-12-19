@@ -8,7 +8,7 @@ urlpatterns = patterns("",
 	(r"^login$", "application.admin.views.login"),
 	(r"^logout$", "application.admin.views.logout"),
 
-	(r"^clear_cache", "application.admin.views.clear_cache"),
+	(r"^clear$", "application.admin.views.clear_cache"),
 
 	(r"^docstree$", "application.admin.views.docstree"),
 	(r"^docstree/(.*)$", "application.admin.views.docstree"),
