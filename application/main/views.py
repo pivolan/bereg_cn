@@ -113,6 +113,8 @@ def feedback(request):
 
 
 def search(request):
+	client = init_gdata_client()
+	feed = client.GetDocList(uri='/feeds/default/private/full?q=example+query')
 	json = {}
 	return HttpResponseRedirect('/')
 
