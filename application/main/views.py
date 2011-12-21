@@ -113,7 +113,7 @@ def feedback(request):
 
 
 def search(request):
-	pass
+	return HttpResponseRedirect('/')
 
 
 def _get_doc(id, use_cache=True):
