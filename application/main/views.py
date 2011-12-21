@@ -9,6 +9,7 @@ from django.template import RequestContext
 from google.appengine.api import images
 from pprint import pprint
 from django.conf import settings
+from django.utils import simplejson
 
 from library.system.util import render_to
 from application.main.models import *
@@ -112,11 +113,10 @@ def feedback(request):
 	return {'form': form}
 
 
-def search(request):
+def search(request, q):
 	client = init_gdata_client()
-	feed = client.GetDocList(uri='/feeds/default/private/full?q=example+query')
-	json = {}
-	return HttpResponseRedirect('/')
+	feed = client.GetDocList(uri='/feeds/default/private/full?q=%s' % q.encode('UTF-8'))
+	return HttpResponse(simplejson.dumps(feed), mimetype="application/json")
 
 
 def _get_doc(id, use_cache=True):
