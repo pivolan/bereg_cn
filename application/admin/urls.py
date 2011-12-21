@@ -4,7 +4,6 @@ from django.conf import settings
 urlpatterns = patterns("",
 	(r"^add$", "application.admin.views.add"),
 	(r"^remove$", "application.admin.views.remove"),
-	(r"^test$", "application.admin.views.test"),
 	(r"^login$", "application.admin.views.login"),
 	(r"^logout$", "application.admin.views.logout"),
 
