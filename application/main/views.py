@@ -113,6 +113,7 @@ def feedback(request):
 
 
 def search(request):
+	json = {}
 	return HttpResponseRedirect('/')
 
 
