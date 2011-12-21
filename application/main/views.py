@@ -112,6 +112,10 @@ def feedback(request):
 	return {'form': form}
 
 
+def search(request):
+	pass
+
+
 def _get_doc(id, use_cache=True):
 	if googleUsers.is_current_user_admin():
 		memcache.delete(id)

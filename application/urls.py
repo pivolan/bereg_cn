@@ -6,6 +6,7 @@ urlpatterns = patterns("",
 	(r"^service", "application.main.views.service"),
 	(r"^study$", "application.main.views.study"),
 	(r"^feedback$", "application.main.views.feedback"),
+	(r"^search$", "application.main.views.search"),
 
 	(r"^login$", "application.main.views.login"),
 	(r"^logout$", "application.main.views.logout"),
